@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/* CSS Document */
+/* BODY */
+body {
+  font-family: Arial, "sans-serif";
+  background-color: white;
+  margin: 15px;
+}
+
+/* Scrollbar */
+html::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Séléction texte */
+*::selection {
+  color: white;
+  background-color: black;
+}
+
+/* Liens */
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: none;
+}
+
+/* Input */
+input {
+  background: none;
+  border: 1px solid black;
+  background-color: none;
+  border-radius: 0px;
+  width: 75px;
+}
+
+input:focus {
+  border: 1px solid black;
+  background-color: none;
+  border-radius: 0px;
+}
+
+/* Texte */
+p, a, input {
+  color: black;
+  font-weight: 500;
+  font-size: 0.95em;
+  line-height: 20px;
+  text-align: left;
+}
+
+bold {
+  font-weight: 700;
+}
+
+mark {
+  padding: 5px;
+  border: 2px solid;
+  border-color: black;
+  color: black;
+  background-color: transparent;
+}
+
+.desc {
+  display: block;
+  float: right;
+  text-align: right;
+  font-weight: 700;
+  font-size: 0.95em;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.date {
+  display: block;
+  float: right;
+  text-align: right;
+  font-weight: 700;
+  width: 100%;
+  font-size: 0.95em;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+/* Texte fixe + console */
+#menu {
+  position: fixed;
+  top: 0%;
+  left: 15px;
+  width: 33%;
+}
+
+#console {
+  display: block;
+  line-height: 20px;
+  width: 33%;
+  position: fixed;
+  bottom: 15px;
+}
+
+/* Bloc projet */
+#Projets {
+  position: relative;
+  display: block;
+  left: 35%;
+  width: 65%;
+}
+
+.image {
+  float: right;
+  max-width: 100%;
+  margin-bottom: 15px;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+
+.image:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.video {
+  float: right;
+  max-width: 100%;
+  margin-bottom: 15px;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+
+.video:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+#pageerror {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 400px;
+  height: 344px;
+  transform: translate(-50%, -50%);
+}
+
+.error{
+  float: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95em;
+  color: white;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+/* Responsive Tablette */
+@media screen and (min-width:601px) and (max-width:1000px) {
+
+  /* Texte fixe + console */
+  #menu {
+    position: relative;
+    display: block;
+    width: 80%;
+    padding-right: 15px;
+  }
+
+  #console {
+    margin: 15px;
+    width: 80%;
+  }
+
+  /* Bloc projet */
+  #Projets {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    left: 0%;
+    margin-top: 50px;
+  }
+
+  .image {
+    float: right;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .video {
+    float: right;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* Responsive Smartphone */
+@media screen and (max-width:600px) {
+
+  /* Texte fixe + console */
+  #menu {
+    position: relative;
+    display: block;
+    width: 90%;
+  }
+
+  #console {
+    width: 100%;
+    left: 0%;
+    margin: 15px;
+  }
+
+  /* Bloc projet */
+  #Projets {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    left: 0%;
+    margin-top: 50px;
+  }
+
+  .image {
+    float: right;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .video {
+    float: right;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}

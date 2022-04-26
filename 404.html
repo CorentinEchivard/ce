@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oupssi</title>
+  <link rel="stylesheet" href="scripts/styles.css">
+  <link rel="icon" type="image/x-icon" href="/links/favicon.ico">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116934316-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-116934316-1');
+  </script>
+</head>
+
+
+
+<!-- Body -->
+
+<body id="top" style="background:black;">
+
+
+  <div id="pageerror">
+    <!-- Footer -->
+
+    <div class="error">
+      <video autoplay muted playsinline loop class="video">
+        <source src="links/CE_1-video404.webm" type="video/webm" alt="Oupsi sorry no page here">
+        Sorry, your browser doesn't support embedded videos...
+      </video>
+      ✦✶✷✹❋✽✱<br><br>
+      Oupssi, this page does not exist<br>
+      <a href="index.html" style="color: white;">let's go back</a>
+    </div>
+  </div>
+
+  <!-- Block console -->
+
+  <div id="console">
+    <div id="BTT">
+      <a onclick="invert()" style="color: white;">◐ Invert</a>&emsp;<a onClick="size(-0.2); return false;" style="color: white;">⊝ Size</a>&emsp;<a onClick="size(0.2); return false;" style="color: white;">⊕ Size</a>&emsp;
+      <input type="text" id="valeurbg" value="#color" oninput="bgcolor()" style="color: white; border: 1px solid white;">&emsp;<input type="text" id="valeurtxt" value="#color" oninput="txtcolor()" style="color: white; border: 1px solid white;"><br>
+    </div>
+  </div>
+
+  <!-- Script -->
+
+  <script>
+    // Inverser les couleurs
+    function invert() {
+      let css = 'html {-webkit-filter: invert(100%);' +
+        '-moz-filter: invert(100%);' +
+        '-o-filter: invert(100%);' +
+        '-ms-filter: invert(100%); }',
+        head = document.getElementsByTagName('head')[0],
+        style = document.createElement('style')
+
+      if (!window.counter) {
+        window.counter = 1
+      } else {
+        window.counter++
+        if (window.counter % 2 == 0) {
+          css = 'html {-webkit-filter: invert(0%); -moz-filter: invert(0%); -o-filter: invert(0%); -ms-filter: invert(0%); }'
+        }
+      }
+
+      style.type = 'text/css'
+      if (style.styleSheet) {
+        style.styleSheet.cssText = css
+      } else {
+        style.appendChild(document.createTextNode(css))
+      }
+      head.appendChild(style)
+    }
+    var t;
+    t = 1;
+
+    // Changer la taille du texte
+    function size(modif) {
+      t = t + modif;
+      document.getElementsByTagName("body")[0].style.fontSize = t + "em";
+    }
+
+    // Personnalisation couleurs du fond
+    function bgcolor() {
+      var x =
+        document.getElementById("valeurbg").value;
+      document.body.style.background = x;
+    }
+
+    // Personnalisation couleurs du texte
+    function txtcolor() {
+      var y =
+        document.getElementById("valeurtxt").value;
+
+      const collection = document.getElementsByTagName("p", "a", "input", "mark");
+      for (let i = 0; i < collection.length; i++) {
+        collection[i].style.color = y;
+      }
+    }
+  </script>
+</body>
+
+</html>
