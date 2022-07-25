@@ -70,6 +70,14 @@ mark {
   background-color: transparent;
 }
 
+mark:hover {
+  padding: 5px;
+  border: 2px solid;
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
 .desc {
   display: block;
   float: right;
@@ -89,6 +97,14 @@ mark {
   font-size: 0.95em;
   line-height: 20px;
   margin-bottom: 25px;
+}
+
+.panel{
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 /* Texte fixe + console */
