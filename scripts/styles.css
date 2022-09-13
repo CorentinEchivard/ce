@@ -215,11 +215,13 @@ mark:hover {
   .image {
     max-width: 100%;
     margin-bottom: 15px;
+    margin-left: 15px;
   }
 
   .video {
     max-width: 100%;
     margin-bottom: 15px;
+    margin-left: 15px;
   }
 }
 
