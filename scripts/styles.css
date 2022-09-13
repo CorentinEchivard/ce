@@ -5,6 +5,7 @@
 body {
   font-family: Arial, "sans-serif";
   background-color: white;
+  font-size: 15px;
   margin: 15px;
 }
 
@@ -53,7 +54,15 @@ input:focus {
 p, a, input {
   color: black;
   font-weight: 500;
-  font-size: 0.85em;
+  font-size: 0.90em;
+  line-height: 18px;
+  text-align: left;
+}
+/* Texte */
+a {
+  color: black;
+  font-weight: 500;
+  font-size: 1em;
   line-height: 18px;
   text-align: left;
 }
@@ -83,7 +92,7 @@ mark:hover {
   float: right;
   text-align: right;
   font-weight: 700;
-  font-size: 0.85em;
+  font-size: 0.90em;
   line-height: 18px;
   margin-bottom: 25px;
 }
@@ -94,7 +103,7 @@ mark:hover {
   text-align: right;
   font-weight: 700;
   width: 100%;
-  font-size: 0.85em;
+  font-size: 0.9em;
   line-height: 18px;
   margin-bottom: 25px;
 }
@@ -112,13 +121,13 @@ mark:hover {
   position: fixed;
   top: 0%;
   left: 15px;
-  width: 33%;
+  width: 25%;
 }
 
 #console {
-  display: block;
+  font-size: 0.9em;
   line-height: 18px;
-  width: 33%;
+  width: 25%;
   position: fixed;
   bottom: 15px;
 }
@@ -126,15 +135,12 @@ mark:hover {
 /* Bloc projet */
 #Projets {
   position: relative;
-  display: block;
   left: 35%;
   width: 65%;
 }
 
 /* Texte */
 #time {
-  font-size: 0.85em;
-  line-height: 18px;
 }
 
 .image {
@@ -176,7 +182,7 @@ mark:hover {
   float: center;
   text-align: center;
   font-weight: 700;
-  font-size: 0.85em;
+  font-size: 0.9em;
   color: white;
   line-height: 18px;
   margin-bottom: 25px;
@@ -188,7 +194,6 @@ mark:hover {
   /* Texte fixe + console */
   #menu {
     position: relative;
-    display: block;
     width: 80%;
     padding-right: 15px;
   }
@@ -200,21 +205,19 @@ mark:hover {
 
   /* Bloc projet */
   #Projets {
-    position: relative;
     text-align: right;
+    float: right;
     width: 100%;
     left: 0%;
     margin-top: 50px;
   }
 
   .image {
-    float: right;
     max-width: 100%;
     margin-bottom: 15px;
   }
 
   .video {
-    float: right;
     max-width: 100%;
     margin-bottom: 15px;
   }
@@ -226,7 +229,6 @@ mark:hover {
   /* Texte fixe + console */
   #menu {
     position: relative;
-    display: block;
     width: 90%;
   }
 
@@ -238,7 +240,6 @@ mark:hover {
 
   /* Bloc projet */
   #Projets {
-    position: relative;
     text-align: right;
     width: 100%;
     left: 0%;
@@ -246,13 +247,11 @@ mark:hover {
   }
 
   .image {
-    float: right;
     max-width: 100%;
     margin-bottom: 15px;
   }
 
   .video {
-    float: right;
     max-width: 100%;
     margin-bottom: 15px;
   }
