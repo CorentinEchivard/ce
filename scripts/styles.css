@@ -147,6 +147,7 @@ mark:hover {
   float: right;
   max-width: 100%;
   margin-bottom: 15px;
+  margin-left: 15px;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
 }
@@ -160,6 +161,7 @@ mark:hover {
   float: right;
   max-width: 100%;
   margin-bottom: 15px;
+  margin-left: 15px;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
 }
@@ -215,13 +217,11 @@ mark:hover {
   .image {
     max-width: 100%;
     margin-bottom: 15px;
-    margin-left: 15px;
   }
 
   .video {
     max-width: 100%;
     margin-bottom: 15px;
-    margin-left: 15px;
   }
 }
 
