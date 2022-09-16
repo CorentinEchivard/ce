@@ -58,6 +58,7 @@ p, a, input {
   line-height: 18px;
   text-align: left;
 }
+
 /* Texte */
 a {
   color: black;
@@ -108,7 +109,7 @@ mark:hover {
   margin-bottom: 25px;
 }
 
-.panel{
+.panel {
   padding: 0 18px;
   background-color: white;
   max-height: 0;
@@ -140,8 +141,7 @@ mark:hover {
 }
 
 /* Texte */
-#time {
-}
+#time {}
 
 .image {
   float: right;
@@ -180,7 +180,7 @@ mark:hover {
   transform: translate(-50%, -50%);
 }
 
-.error{
+.error {
   float: center;
   text-align: center;
   font-weight: 700;
@@ -188,6 +188,74 @@ mark:hover {
   color: white;
   line-height: 18px;
   margin-bottom: 25px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  font-size: 0.9em;
+  float: left;
+  border: none;
+  border-left: none;
+  height: 100%;
+}
+
+.nom {
+  position: absolute;
+  left: 10%;
+  width: 10%;
+  font-size: 1em;
+  float: left;
+  background-color: none;
+}
+
+.details {
+  position: absolute;
+  left: 20%;
+  width: 10%;
+}
+
+.ingredient {
+  position: absolute;
+  left: 30%;
+  width: 20%;
+}
+
+.recette {
+  position: absolute;
+  left: 50%;
+  width: 40%;
+  height: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the tab */
+.tab {
+  width: 10%;
+  font-size: 1em;
+  float: left;
+  background-color: none;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 0;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: black;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  color: white;
 }
 
 /* Responsive Tablette */
@@ -201,7 +269,7 @@ mark:hover {
   }
 
   #console {
-    margin: 15px;
+    margin: 0;
     width: 80%;
   }
 
@@ -222,6 +290,48 @@ mark:hover {
   .video {
     max-width: 100%;
     margin-bottom: 15px;
+  }
+
+  .nom {
+    position: relative;
+    float: none;
+    left: 0%;
+    width: auto;
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+
+  .details {
+    position: relative;
+    float: none;
+    left: 0%;
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .ingredient {
+    position: relative;
+    float: none;
+    left: 0%;
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .recette {
+    position: relative;
+    float: none;
+    left: 0%;
+    width: auto;
+    margin-bottom: 100px;
+  }
+
+  /* Style the tab */
+  .tab {
+    position: relative;
+    float: none;
+    left: 0%;
+    width: 20%;
+    margin-bottom: 30px;
   }
 }
 
@@ -256,5 +366,46 @@ mark:hover {
   .video {
     max-width: 100%;
     margin-bottom: 15px;
+  }
+
+  .nom {
+    position: relative;
+    float: none;
+    left: 2%;
+    width: auto;
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+
+  .details {
+    position: relative;
+    float: none;
+    left: 2%;
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .ingredient {
+    position: relative;
+    float: none;
+    left: 2%;
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .recette {
+    position: relative;
+    float: none;
+    left: 2%;
+    width: auto;
+    margin-bottom: 100px;
+  }
+
+  .tab {
+    position: relative;
+    float: none;
+    left: 2%;
+    width: auto;
+    margin-bottom: 30px;
   }
 }
