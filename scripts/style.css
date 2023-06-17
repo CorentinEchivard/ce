@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+/* body and website */
+body {
+  font-family: Arial, "sans-serif";
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+html::-webkit-scrollbar {
+  width: 10px;
+  background-color: white;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: none;
+}
+
+/* Link */
+a {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #A8A8A8;
+}
+
+a.langue {
+  color: #A8A8A8;
+}
+
+a.langue:link {
+  text-decoration: none;
+  color: #A8A8A8;
+}
+
+a.langue:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a.langue:active {
+  text-decoration: none;
+  color: #A8A8A8;
+}
+
+*::selection {
+  color: #A8A8A8;
+  background-color: black;
+}
+
+/* TEXT */
+p {
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.intro {
+  background: #A8A8A8;
+  color: #black;
+  font-size: 30px;
+  font-weight: 500;
+  width: 60%;
+  padding: 150px 0px 150px 0px;
+}
+
+.text {
+  color: #A8A8A8;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 0;
+  width: 50%;
+  padding: 100px 0px 150px 0px;
+}
+
+/* Sticky menu & content */
+.stickyWrapper {
+  position: relative;
+  float: left;
+}
+
+.stickyMainContainer {
+  overflow-y: scroll;
+  float: left;
+  background: black;
+  height: 100vh;
+}
+
+.stickyFix {
+  position: absolute;
+}
+
+/* header */
+.fixbar {
+  position: fixed;
+  right: 0;
+  z-index: 100;
+  background: #A8A8A8;
+  padding: 6px 8px 8px 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.stickyHeader {
+  padding: 6px 0px;
+}
+
+.stickyHedBtm {
+  float: left;
+}
+
+.stickyNavLink {
+  background: #A8A8A8;
+  margin: 0;
+  padding: 6px 8px 8px 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.stickyTabContainer {
+  scroll-behavior: smooth;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+
+/* content */
+.etoile {
+  font-size: 160px;
+  text-align: center;
+  width: 100%;
+  color: #A8A8A8;
+  font-weight: 500;
+  padding: 100px 0px 0px 0px;
+}
+
+.langue {
+  color: #A8A8A8;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagefull {
+  padding: 50px;
+  width: 55%;
+  height: auto;
+}
+
+.imagehalf {
+  padding: 50px;
+  width: 35%;
+  height: auto;
+}
+
+.video {
+  padding: 50px;
+  width: 55%;
+  height: auto;
+}
+
+.apropos {
+  position: relative;
+  background: #A8A8A8;
+  height: 80%;
+  padding: 10px;
+  margin: 0;
+}
+
+.cv {
+  width: 95%;
+}
+
+.toggleDiv {
+  display: none;
+}
+
+@media screen and (min-width:701px) and (max-width:960px) {
+  p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .intro {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .text {
+    font-size: 15px;
+    line-height: 22px;
+    width: 80%;
+  }
+
+  .imagefull {
+    padding: 35px;
+    width: 100%;
+  }
+
+  .imagehalf {
+    padding: 35px;
+    width: 40%;
+  }
+
+  .video {
+    padding: 35px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:700px) {
+  p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .description {
+    padding: 0;
+  }
+
+  .intro {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+  }
+
+  .imagefull {
+    padding: 20px;
+    width: 80%;
+  }
+
+  .imagehalf {
+    padding: 20px;
+    width: 35%;
+  }
+
+  .video {
+    padding: 20px;
+    width: 80%;
+  }
+}
