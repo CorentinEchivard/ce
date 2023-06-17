@@ -72,7 +72,7 @@ p {
   color: #black;
   font-size: 30px;
   font-weight: 500;
-  width: 80%;
+  width: 60%;
   padding: 150px 0px 150px 0px;
 }
 
@@ -168,19 +168,19 @@ p {
 }
 
 .imagefull {
-  padding: 0;
+  padding: 50px;
   width: 55%;
   height: auto;
 }
 
 .imagehalf {
-  padding: 0;
+  padding: 50px;
   width: 35%;
   height: auto;
 }
 
 .video {
-  padding: 0;
+  padding: 50px;
   width: 55%;
   height: auto;
 }
@@ -201,7 +201,51 @@ p {
   display: none;
 }
 
-@media screen and (max-width:960px) {
+@media screen and (min-width:961px) and (max-width:1200px) {
+  .stickyTabContainer {
+    padding: 40px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .intro {
+    font-size: 26px;
+    width: 70%;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 70%;
+  }
+
+  .imagefull {
+    padding: 40px;
+    width: 55%;
+    height: auto;
+  }
+
+  .imagehalf {
+    padding: 40px;
+    width: 35%;
+    height: auto;
+  }
+
+  .video {
+    padding: 40px;
+    width: 55%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:960px) {
+  .stickyTabContainer {
+    padding: 30px;
+  }
+
   p {
     font-size: 16px;
     line-height: 22px;
@@ -213,23 +257,63 @@ p {
   }
 
   .text {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 22px;
-    width: 80%;
+    width: 90%;
   }
 
   .imagefull {
-    padding: 35px;
+    padding: 35px 0px;
+    width: 65%;
+    height: auto;
+  }
+
+  .imagehalf {
+    padding: 35px 0px;
+    width: 40%;
+    height: auto;
+  }
+
+  .video {
+    padding: 35px 0px;
+    width: 65%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .stickyTabContainer {
+    padding: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .intro {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+  }
+
+  .imagefull {
+    padding: 25px 0px;
     width: 100%;
   }
 
   .imagehalf {
-    padding: 35px;
+    padding: 25px 0px;
     width: 40%;
   }
 
   .video {
-    padding: 35px;
+    padding: 25px 0px;
     width: 100%;
   }
 }
