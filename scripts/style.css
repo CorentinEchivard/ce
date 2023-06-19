@@ -411,7 +411,7 @@ a.pageerror:active {
   }
 
   .apropos {
-    height: 100%;
+    height: auto;
     padding: 10px 10px 10px 10px;
     margin: 0;
   }
