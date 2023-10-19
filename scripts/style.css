@@ -54,6 +54,25 @@ a.langue:active {
   color: #A8A8A8;
 }
 
+a.site {
+  color: #A8A8A8;
+}
+
+a.site:link {
+  text-decoration: none;
+  color: #A8A8A8;
+}
+
+a.site:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a.site:active {
+  text-decoration: none;
+  color: #A8A8A8;
+}
+
 *::selection {
   color: black;
   background-color: white;
@@ -411,7 +430,7 @@ a.pageerror:active {
   }
 
   .apropos {
-    height: auto;
+    height: 100%;
     padding: 10px 10px 10px 10px;
     margin: 0;
   }
