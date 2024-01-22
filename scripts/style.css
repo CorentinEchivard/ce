@@ -303,8 +303,8 @@ a.pageerror:active {
   }
 
   p {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .intro {
@@ -345,6 +345,8 @@ a.pageerror:active {
 }
 
 .overlay-block {
+  padding: 10px;
+  width: 85%;
   font-size: 22px;
 }
 
@@ -368,7 +370,7 @@ a.pageerror:active {
 
   p {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
   }
 
   .intro {
@@ -429,7 +431,7 @@ a.pageerror:active {
 
   p {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 18px;
     letter-spacing: 0.1px;
   }
 
@@ -475,7 +477,9 @@ a.pageerror:active {
   }
 
   .overlay-block {
+    padding: 10px;
     font-size: 18px;
+    width: 100%;
   }
 
   .overlay .closebtn {
