@@ -263,7 +263,7 @@ a.pageerror:active {
 
 /* Overlay */
 .overlay {
-  height: 100%;
+  height: auto;
   width: 100%;
   display: none;
   position: fixed;
@@ -271,15 +271,14 @@ a.pageerror:active {
   left: 0;
   z-index: 1000;
   background-color: white;
+  padding-bottom: 50px;
 }
 
 .overlay-content {
-  height: 100%;
+  height: auto;
   width: 100%;
   display: flex;
   overflow: hidden;
-  justify-content: center;
-  align-items: center;
 }
 
 .overlay-block {
