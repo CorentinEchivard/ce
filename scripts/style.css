@@ -36,12 +36,12 @@ a:hover {
 }
 
 a.langue {
-  color: #A8A8A8;
+  color: white;
 }
 
 a.langue:link {
   text-decoration: none;
-  color: #A8A8A8;
+  color: white;
 }
 
 a.langue:hover {
@@ -51,16 +51,16 @@ a.langue:hover {
 
 a.langue:active {
   text-decoration: none;
-  color: #A8A8A8;
+  color: white;
 }
 
 a.site {
-  color: #A8A8A8;
+  color: white;
 }
 
 a.site:link {
   text-decoration: none;
-  color: #A8A8A8;
+  color: white;
 }
 
 a.site:hover {
@@ -70,7 +70,7 @@ a.site:hover {
 
 a.site:active {
   text-decoration: none;
-  color: #A8A8A8;
+  color: white;
 }
 
 *::selection {
@@ -88,7 +88,6 @@ p {
 }
 
 .intro {
-  background: #A8A8A8;
   color: #black;
   font-size: 24px;
   line-height: 30px;
@@ -98,7 +97,7 @@ p {
 }
 
 .text {
-  color: #A8A8A8;
+  color: white;
   font-size: 20px;
   line-height: 26px;
   font-weight: 500;
@@ -164,12 +163,12 @@ p {
 
 /* content */
 .etoile {
-  font-size: 160px;
+  font-size: 120px;
   text-align: center;
   width: 100%;
-  color: #A8A8A8;
+  color: white;
   font-weight: 500;
-  padding: 100px 0px 0px 0px;
+  padding: 25px 0px 0px 0px;
 }
 
 .langue {
@@ -195,14 +194,14 @@ p {
 }
 
 .imagehalf {
-  padding: 50px;
-  width: 35%;
+  padding: 75px;
+  width: 30%;
   height: auto;
 }
 
 .video {
   padding: 50px;
-  width: 55%;
+  width: 45%;
   height: auto;
 }
 
@@ -224,12 +223,13 @@ p {
 .apropos {
   position: relative;
   background: #A8A8A8;
-  height: 95%;
-  padding: 10px;
+  height: auto;
+  padding: 10px 10px 20px 10px;
   margin: 0;
 }
 
 .cv {
+  font-size: 26px;
   width: 95%;
 }
 
@@ -261,6 +261,43 @@ a.pageerror:active {
   text-decoration: none;
   color: #A8A8A8;
 }
+
+/* Overlay */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+.overlay-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-block {
+  width: 60%;
+  height: auto;
+  text-align: left;
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  right: 10px;
+  font-size: 40px;
+}
+
 
 @media screen and (min-width:961px) and (max-width:1200px) {
   .stickyTabContainer {
