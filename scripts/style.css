@@ -31,7 +31,7 @@ a:link {
 
 a:hover {
   text-decoration: none;
-  color: #A8A8A8;
+  color: #C4C4C4;
 }
 
 a.langue {
@@ -73,9 +73,10 @@ a.site:active {
 }
 
 *::selection {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #d9d9d9;
 }
+
 
 /* TEXT */
 p {
@@ -127,7 +128,7 @@ p {
   position: fixed;
   right: 0;
   z-index: 100;
-  background: #A8A8A8;
+  background: #C4C4C4;
   padding: 6px 8px 8px 8px;
   font-size: 20px;
   font-weight: 500;
@@ -142,7 +143,7 @@ p {
 }
 
 .stickyNavLink {
-  background: #A8A8A8;
+  background: #C4C4C4;
   margin: 0;
   padding: 6px 8px 8px 8px;
   font-size: 16px;
@@ -171,7 +172,7 @@ p {
 }
 
 .langue {
-  color: #A8A8A8;
+  color: #C4C4C4;
   font-size: 12px;
   line-height: 24px;
   font-weight: 500;
@@ -221,7 +222,7 @@ p {
 
 .apropos {
   position: relative;
-  background: #A8A8A8;
+  background: #C4C4C4;
   height: auto;
   padding: 10px 10px 20px 10px;
   margin: 0;
@@ -248,7 +249,7 @@ a.pageerror {
 
 a.pageerror:link {
   text-decoration: none;
-  color: #A8A8A8;
+  color: #C4C4C4;
 }
 
 a.pageerror:hover {
@@ -258,7 +259,7 @@ a.pageerror:hover {
 
 a.pageerror:active {
   text-decoration: none;
-  color: #A8A8A8;
+  color: #C4C4C4;
 }
 
 /* Overlay */
