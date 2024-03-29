@@ -52,6 +52,7 @@ button {
   background: none;
   border: none;
   font-size: 1rem;
+  padding: 0;
 }
 
 button:hover {
@@ -415,7 +416,7 @@ p {
 
 @media screen and (max-width:600px) {
   html {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .header {
@@ -472,5 +473,9 @@ p {
   .imagefull {
     padding: 50px 0px;
     width: 100%;
+  }
+
+  video{
+    display: none;
   }
 }
