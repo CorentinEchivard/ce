@@ -351,6 +351,14 @@ p {
     padding: 50px 0px;
     width: 75%;
   }
+
+  .light-theme .imageneg {
+    padding: 50px 0px;
+    width: 75%;
+    height: auto;
+    filter: invert(1);
+    mix-blend-mode: multiply;
+  }
 }
 
 
@@ -473,6 +481,14 @@ p {
   .imagefull {
     padding: 50px 0px;
     width: 100%;
+  }
+
+  .light-theme .imageneg {
+    padding: 50px 0px;
+    width: 100%;
+    height: auto;
+    filter: invert(1);
+    mix-blend-mode: multiply;
   }
 
   video{
