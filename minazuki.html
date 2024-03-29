@@ -181,11 +181,20 @@
     setMode();
     updateButtonDecoration(localStorage.getItem("mode") || "light");
 
+    // Event listener for theme change
     $(".theme-label").on("click", function() {
       var theme = $(this).attr("for");
       localStorage.setItem("mode", theme);
       setMode();
       updateButtonDecoration(theme);
+    });
+
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function(e) {
+      if (e.matches) {
+        changeTheme('dark');
+      } else {
+        changeTheme('light');
+      }
     });
   });
 
@@ -222,7 +231,7 @@
     setMode();
     updateButtonDecoration(theme);
   }
-
+  
 
   // Langue
 
