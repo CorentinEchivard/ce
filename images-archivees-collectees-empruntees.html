@@ -183,50 +183,59 @@
   //Light/Dark mode user prefered
 
   $(document).ready(function() {
-  setMode();
-  updateButtonDecoration(localStorage.getItem("mode") || "light");
+    setMode();
+    updateButtonDecoration(localStorage.getItem("mode") || "light");
 
-  $(".theme-label").on("click", function() {
-    var theme = $(this).attr("for");
+    // Event listener for theme change
+    $(".theme-label").on("click", function() {
+      var theme = $(this).attr("for");
+      localStorage.setItem("mode", theme);
+      setMode();
+      updateButtonDecoration(theme);
+    });
+
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function(e) {
+      if (e.matches) {
+        changeTheme('dark');
+      } else {
+        changeTheme('light');
+      }
+    });
+  });
+
+  function setMode() {
+    var mode = localStorage.getItem("mode");
+
+    if (!mode) {
+      mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+
+    $("body").removeClass("dark-theme light-theme");
+    $("body").addClass(mode + "-theme");
+
+    if (mode === "light") {
+      $(".light-theme-image").removeClass("dark-image-style");
+      $(".light-theme-image").addClass("light-image-style");
+    } else {
+      $(".light-theme-image").removeClass("light-image-style");
+      $(".light-theme-image").addClass("dark-image-style");
+    }
+  }
+
+  function updateButtonDecoration(selectedTheme) {
+    $('.theme-label').removeClass('checked underline-light underline-dark');
+    if (selectedTheme === "light") {
+      $('.theme-label.light-theme').addClass('checked underline-light');
+    } else {
+      $('.theme-label.dark-theme').addClass('checked underline-dark');
+    }
+  }
+
+  function changeTheme(theme) {
     localStorage.setItem("mode", theme);
     setMode();
     updateButtonDecoration(theme);
-  });
-});
-
-function setMode() {
-  var mode = localStorage.getItem("mode");
-
-  if (!mode) {
-    mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   }
-
-  $("body").removeClass("dark-theme light-theme");
-  $("body").addClass(mode + "-theme");
-
-  if (mode === "light") {
-    $(".light-theme-image").removeClass("dark-image-style");
-    $(".light-theme-image").addClass("light-image-style");
-  } else {
-    $(".light-theme-image").removeClass("light-image-style");
-    $(".light-theme-image").addClass("dark-image-style");
-  }
-}
-
-function updateButtonDecoration(selectedTheme) {
-  $('.theme-label').removeClass('checked underline-light underline-dark');
-  if (selectedTheme === "light") {
-    $('.theme-label.light-theme').addClass('checked underline-light');
-  } else {
-    $('.theme-label.dark-theme').addClass('checked underline-dark');
-  }
-}
-
-function changeTheme(theme) {
-  localStorage.setItem("mode", theme);
-  setMode();
-  updateButtonDecoration(theme);
-}
 
 
   // Langue
