@@ -479,6 +479,11 @@ p {
     width: 100%;
   }
 
+  .dark-theme .imageneg {
+    padding: 50px 0px;
+    width: 100%;
+  }
+
   .light-theme .imageneg {
     padding: 50px 0px;
     width: 100%;
