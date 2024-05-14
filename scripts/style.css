@@ -155,7 +155,7 @@ p {
   white-space: nowrap
 }
 
-.drop-project{
+.drop-project {
   background: var(--color-background);
   width: fit-content;
   padding: 0.18rem 1rem 0.2rem 0rem;
@@ -313,7 +313,6 @@ p {
 }
 
 @media screen and (min-width:1025px) and (max-width:1200px) {
-
   .menu {
     column-gap: 0.5rem;
   }
@@ -361,9 +360,7 @@ p {
   }
 }
 
-
 @media screen and (min-width:601px) and (max-width:1024px) {
-
   .header {
     display: flex;
     flex-direction: column;
@@ -420,7 +417,6 @@ p {
     width: 85%;
   }
 }
-
 
 @media screen and (max-width:600px) {
   html {
@@ -491,7 +487,8 @@ p {
     mix-blend-mode: multiply;
   }
 
-  video{
-    display: none;
+  .video {
+    padding: 50px 0px;
+    width: 100%;
   }
 }
