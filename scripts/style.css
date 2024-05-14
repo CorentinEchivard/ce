@@ -287,13 +287,13 @@ p {
 }
 
 .imagefull, video {
-  padding: 150px 50px;
+  padding: 100px 50px;
   width: 60%;
   height: auto;
 }
 
 .light-theme .imageneg {
-  padding: 150px 50px;
+  padding: 100px 50px;
   width: 60%;
   height: auto;
   filter: invert(1);
@@ -301,7 +301,7 @@ p {
 }
 
 .dark-theme .imageneg {
-  padding: 150px 50px;
+  padding: 100px 50px;
   width: 60%;
   height: auto;
 }
