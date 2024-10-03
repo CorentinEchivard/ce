@@ -322,7 +322,7 @@ p {
 }
 
 
-.light-theme .imageneg {
+.light-theme .imageneg, .light-theme .homeneg {
   padding: 100px 50px;
   width: 60%;
   height: auto;
@@ -335,7 +335,7 @@ p {
   mix-blend-mode: multiply;
 }
 
-.dark-theme .imageneg {
+.dark-theme .imageneg, .dark-theme .homeneg {
   padding: 100px 50px;
   width: 60%;
   height: auto;
@@ -395,7 +395,7 @@ p {
     width: 75%;
   }
 
-  .light-theme .imageneg {
+  .light-theme .imageneg, .light-theme .homeneg, {
     padding: 50px 0px;
     width: 75%;
     height: auto;
@@ -556,6 +556,19 @@ p {
 
   .light-theme .imageneg {
     padding: 50px 0px;
+    width: 100%;
+    height: auto;
+    filter: invert(1);
+    mix-blend-mode: multiply;
+  }
+
+  .dark-theme .homeneg {
+    padding: 0px 0px 50px 0px;
+    width: 100%;
+  }
+
+  .light-theme .homeneg {
+    padding: 0px 0px 50px 0px;
     width: 100%;
     height: auto;
     filter: invert(1);
