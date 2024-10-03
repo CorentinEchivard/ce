@@ -549,8 +549,8 @@ p {
   }
 
   .imageintro, .imageintroneg  {
-    padding: 50px 50px;
-    width: 90%;
+    padding: 50px 0px;
+    width: 80%;
   }
 
   .dark-theme .imageneg {
