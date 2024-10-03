@@ -61,11 +61,17 @@ button:hover {
 }
 
 .theme-label.light-theme.underline-light {
-  text-decoration: underline;
+  background: var(--color-txt);
+  border-radius: 1.5rem;
+  width: 1.5rem;
+  color: var(--color-background);
 }
 
 .theme-label.dark-theme.underline-dark {
-  text-decoration: underline;
+  background: var(--color-txt);
+  border-radius: 1.5rem;
+  width: 1.5rem;
+  color: var(--color-background);
 }
 
 .theme-label {
@@ -103,7 +109,7 @@ p {
   flex-wrap: nowrap;
   justify-content: space-between;
   font-weight: 700;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .footer {
@@ -223,17 +229,34 @@ p {
   visibility: visible;
 }
 
+.anim {
+  padding: 0.66666rem 1rem 0rem 1rem;
+  height: 92vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.animcont {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .project-div {
-  padding: 0.66666rem 1rem 1rem 1rem;
+  padding: 0.66666rem 1rem 6rem 1rem;
+  text-align: center;
 }
 
 .project {
   width: auto;
-  padding: 0rem 0rem 0.5rem 0rem;
+  padding: 1rem 0rem 0.5rem 0rem;
   background: none;
   cursor: pointer;
   border: 0;
-  text-align: left;
+  text-align: center;
   transition: 0.3s;
 }
 
@@ -243,7 +266,7 @@ p {
 }
 
 .panel {
-  z-index: 100;
+  z-index: 50;
   width: auto;
   padding: 0 1.4rem;
   font-size: 1rem;
@@ -264,7 +287,7 @@ p {
 
 .description {
   padding: 0.66666rem 1rem 0.5rem 1rem;
-  width: 90%;
+  width: 75%;
   font-size: 1rem;
 }
 
@@ -292,10 +315,22 @@ p {
   height: auto;
 }
 
+.imageintro, .imageintroneg  {
+  padding: 120px 100px 130px 100px;
+  width: 60%;
+  height: auto;
+}
+
+
 .light-theme .imageneg {
   padding: 100px 50px;
   width: 60%;
   height: auto;
+  filter: invert(1);
+  mix-blend-mode: multiply;
+}
+
+.light-theme .imageintroneg {
   filter: invert(1);
   mix-blend-mode: multiply;
 }
@@ -326,6 +361,10 @@ p {
     width: 90%;
   }
 
+  .description {
+    width:85%;
+  }
+
   .miniature {
     max-height: 40px;
   }
@@ -348,6 +387,11 @@ p {
 
   .imagefull {
     padding: 50px 0px;
+    width: 75%;
+  }
+
+  .imageintro, .imageintroneg  {
+    padding: 50px 50px;
     width: 75%;
   }
 
@@ -379,6 +423,10 @@ p {
     flex-wrap: wrap;
   }
 
+  .animcont {
+    width: 100%;
+  }
+
   .menu {
     column-gap: 0.5rem;
   }
@@ -390,6 +438,10 @@ p {
 
   .intro {
     width: 90%;
+  }
+
+  .description {
+    width: 85%;
   }
 
   .miniature {
@@ -414,6 +466,11 @@ p {
 
   .imagefull {
     padding: 50px 0px;
+    width: 85%;
+  }
+
+  .imageintro, .imageintroneg  {
+    padding: 50px 50px;
     width: 85%;
   }
 }
@@ -441,6 +498,10 @@ p {
     flex-wrap: wrap;
   }
 
+  .animcont {
+    width: 100%;
+  }
+
   .menu {
     column-gap: 0.5rem;
   }
@@ -452,6 +513,10 @@ p {
 
   .intro {
     width: 90%;
+  }
+
+  .description {
+    width: 88%;
   }
 
   .miniature {
@@ -477,6 +542,11 @@ p {
   .imagefull {
     padding: 50px 0px;
     width: 100%;
+  }
+
+  .imageintro, .imageintroneg  {
+    padding: 50px 50px;
+    width: 90%;
   }
 
   .dark-theme .imageneg {
