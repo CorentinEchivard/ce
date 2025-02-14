@@ -4,13 +4,13 @@
 body {
   --color-background: #E5E5E5;
   --color-txt: #2F2F2F;
-  --color-accent: #cecece;
+  --color-accent: #d8d8d8;
 }
 
 body.dark-theme {
   --color-background: black;
   --color-txt: #D9D9D9;
-  --color-accent: #2f2f2f;
+  --color-accent: #131313;
 }
 
 /* Website */
