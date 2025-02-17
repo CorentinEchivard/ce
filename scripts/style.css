@@ -522,6 +522,17 @@ header {
     max-height: 40px;
   }
 
+  .fontPanelHome{
+    width: 85%;
+  }
+
+.fullscreen{
+  width: 100vw;
+  max-width: 400px;
+  height: 100vh;
+  max-height: 400px;
+}
+
   .container {
     width: 90%;
     padding: 1rem;
@@ -589,9 +600,6 @@ header {
     max-width: 550px;
     height: 45vh;
     max-height: 550px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   .fontPanelHome {
