@@ -14,10 +14,10 @@ body.dark-theme {
 /* Website */
 html {
   font-size: 20px;
-  font-weight: 400;
 }
 
 body {
+  font-family:"mfbc-regular";
   width: 100vw;
   max-width: 100%;
   height: auto;
@@ -34,7 +34,7 @@ body {
 }
 
 a {
-  font-family: "t1";
+  font-family:"mfbc-bold";
   font-weight: 700;
   color: var(--color-txt);
   cursor: pointer;
@@ -47,7 +47,7 @@ a:hover {
 }
 
 button {
-  font-family: "t1";
+  font-family:"mfbc-bold";
   font-weight: 700;
   text-decoration: none;
   color: var(--color-txt);
@@ -93,14 +93,14 @@ button:hover {
 }
 
 h1 {
-  font-family: "t1";
+  font-family:"mfbc-bold";
   font-weight: 700;
   margin: 0;
   font-size: 2rem;
 }
 
 h2 {
-  font-family: "t1";
+  font-family:"mfbc-regular";
   font-weight: 400;
   margin: 0;
   font-size: 1.4rem;
@@ -108,16 +108,12 @@ h2 {
 }
 
 h3 {
-  font-family: "t1";
-  font-weight: 400;
   margin: 0;
   font-size: 1rem;
   line-height: 1.4rem;
 }
 
 p {
-  font-family: "t1";
-  font-weight: 400;
   margin: 0;
   font-size: 1rem;
   line-height: 1.4rem;
