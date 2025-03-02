@@ -38,6 +38,7 @@ a {
   color: var(--color-txt);
   cursor: pointer;
   text-decoration: none;
+  filter: none;
 }
 
 a:hover {
