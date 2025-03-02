@@ -35,7 +35,6 @@ body {
 
 a {
   font-family:"mfbc-bold";
-  font-weight: 700;
   color: var(--color-txt);
   cursor: pointer;
   text-decoration: none;
@@ -48,7 +47,6 @@ a:hover {
 
 button {
   font-family:"mfbc-bold";
-  font-weight: 700;
   text-decoration: none;
   color: var(--color-txt);
   background: none;
@@ -94,7 +92,6 @@ button:hover {
 
 h1 {
   font-family:"mfbc-bold";
-  font-weight: 700;
   margin: 0;
   font-size: 2rem;
 }
@@ -152,7 +149,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  height: 90vh;
   overflow: hidden;
 }
 
@@ -173,8 +170,8 @@ header {
 
 .fontblocHome {
   background: var(--color-accent);
-  margin: 8rem 0rem 8rem 0rem;
-  padding: 8rem 3rem 7.5rem 3rem;
+  margin: 6rem 0rem 6rem 0rem;
+  padding: 6rem 3rem 5.5rem 3rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -323,7 +320,7 @@ header {
 }
 
 .project-div {
-  padding: 0.66666rem 6rem 6rem 6rem;
+  padding: 0.66666rem 10rem 5rem 10rem;
   text-align: center;
 }
 
