@@ -92,14 +92,13 @@ button:hover {
 }
 
 h1 {
-  font-family: "mfbc-bold";
+  font-family: "mfbc-bold", arial, sans-serif;
   margin: 0;
   font-size: 2rem;
 }
 
 h2 {
   font-family: "mfbc-regular", arial, sans-serif;
-  font-weight: 400;
   margin: 0;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -107,7 +106,6 @@ h2 {
 
 h3 {
   font-family: "mfbc-regular", arial, sans-serif;
-  font-weight: 400;
   margin: 0;
   font-size: 1rem;
   line-height: 1.4rem;
@@ -115,7 +113,6 @@ h3 {
 
 p {
   font-family: "mfbc-regular", arial, sans-serif;
-  font-weight: 400;
   margin: 0;
   font-size: 1rem;
   line-height: 1.4rem;
