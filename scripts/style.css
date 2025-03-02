@@ -339,11 +339,6 @@ header {
   transition: 0.3s;
 }
 
-.right {
-  text-align: right;
-  line-height: 0.8rem;
-}
-
 .flex {
   display: flex;
   flex-wrap: nowrap;
@@ -357,9 +352,10 @@ header {
 }
 
 .panel {
+  text-align: left;
   z-index: 50;
   width: 80%;
-  padding: 0.75rem 0rem 0rem 0rem;
+  padding: 0.75rem 0rem 0rem 2rem;
   font-size: 1rem;
   max-height: 0;
   overflow: hidden;
