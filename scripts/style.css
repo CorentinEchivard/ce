@@ -14,6 +14,7 @@ body.dark-theme {
 /* Website */
 html {
   font-family: "mfbc-regular";
+  font-weight: 400;
   font-size: 20px;
 }
 
@@ -36,6 +37,7 @@ body {
 
 a {
   font-family: "mfbc-bold";
+  font-weight: 700;
   color: var(--color-txt);
   cursor: pointer;
   text-decoration: none;
@@ -48,6 +50,7 @@ a:hover {
 
 button {
   font-family: "mfbc-bold";
+  font-weight: 700;
   text-decoration: none;
   color: var(--color-txt);
   background: none;
@@ -93,12 +96,14 @@ button:hover {
 
 h1 {
   font-family: "mfbc-bold";
+  font-weight: 700;
   margin: 0;
   font-size: 2rem;
 }
 
 h2 {
   font-family: "mfbc-regular";
+  font-weight: 400;
   margin: 0;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -106,6 +111,7 @@ h2 {
 
 h3 {
   font-family: "mfbc-regular";
+  font-weight: 400;
   margin: 0;
   font-size: 1rem;
   line-height: 1.4rem;
@@ -113,6 +119,7 @@ h3 {
 
 p {
   font-family: "mfbc-regular";
+  font-weight: 400;
   margin: 0;
   font-size: 1rem;
   line-height: 1.4rem;
