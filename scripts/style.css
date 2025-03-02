@@ -13,7 +13,7 @@ body.dark-theme {
 
 /* Website */
 html {
-  font-family: "mfbc-regular", arial, sans-serif;
+  font-family: "mfbc-regular";
   font-size: 20px;
 }
 
@@ -92,27 +92,27 @@ button:hover {
 }
 
 h1 {
-  font-family: "mfbc-bold", arial, sans-serif;
+  font-family: "mfbc-bold";
   margin: 0;
   font-size: 2rem;
 }
 
 h2 {
-  font-family: "mfbc-regular", arial, sans-serif;
+  font-family: "mfbc-regular";
   margin: 0;
   font-size: 1.4rem;
   line-height: 1.6rem;
 }
 
 h3 {
-  font-family: "mfbc-regular", arial, sans-serif;
+  font-family: "mfbc-regular";
   margin: 0;
   font-size: 1rem;
   line-height: 1.4rem;
 }
 
 p {
-  font-family: "mfbc-regular", arial, sans-serif;
+  font-family: "mfbc-regular";
   margin: 0;
   font-size: 1rem;
   line-height: 1.4rem;
