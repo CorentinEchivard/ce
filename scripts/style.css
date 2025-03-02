@@ -322,7 +322,7 @@ header {
 
 .bloc-project {
   padding: 0.8rem 0rem 0.6rem 0rem;
-  border-bottom: solid;
+  border-bottom: solid 2px;
 }
 
 .project-div {
