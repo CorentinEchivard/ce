@@ -34,8 +34,7 @@ body {
 }
 
 a {
-  font-family: "mfbc-bold", arial, sans-serif;
-  font-weight: 700;
+  font-family: "mfbc-bold";
   color: var(--color-txt);
   cursor: pointer;
   text-decoration: none;
@@ -47,8 +46,8 @@ a:hover {
 }
 
 button {
-  font-family: "mfbc-bold", arial, sans-serif;
-  font-weight: 700;
+  font-family: "mfbc-bold";
+  text-decoration: none;
   color: var(--color-txt);
   background: none;
   border: none;
@@ -92,8 +91,8 @@ button:hover {
 }
 
 h1 {
-  font-family: "mfbc-bold", arial, sans-serif;
-  font-weight: 700;
+  font-family: "mfbc-bold";
+  text-decoration: none;
   margin: 0;
   font-size: 2rem;
 }
