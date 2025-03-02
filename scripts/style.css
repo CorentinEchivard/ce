@@ -13,7 +13,7 @@ body.dark-theme {
 
 /* Website */
 html {
-  font-family: "mfbc-regular";
+  font-family: "t1";
   font-weight: 400;
   font-size: 20px;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 a {
-  font-family: "mfbc-bold";
+  font-family: "t2";
   color: var(--color-txt);
   cursor: pointer;
   text-decoration: none;
@@ -47,7 +47,7 @@ a:hover {
 }
 
 button {
-  font-family: "mfbc-bold";
+  font-family: "t2";
   text-decoration: none;
   color: var(--color-txt);
   background: none;
@@ -92,13 +92,13 @@ button:hover {
 }
 
 h1 {
-  font-family: "mfbc-bold";
+  font-family: "t2";
   margin: 0;
   font-size: 2rem;
 }
 
 h2 {
-  font-family: "mfbc-regular";
+  font-family: "t1";
   font-weight: 400;
   margin: 0;
   font-size: 1.4rem;
@@ -106,7 +106,7 @@ h2 {
 }
 
 h3 {
-  font-family: "mfbc-regular";
+  font-family: "t1";
   font-weight: 400;
   margin: 0;
   font-size: 1rem;
@@ -114,7 +114,7 @@ h3 {
 }
 
 p {
-  font-family: "mfbc-regular";
+  font-family: "t1";
   font-weight: 400;
   margin: 0;
   font-size: 1rem;
@@ -665,6 +665,10 @@ header {
   .active, .project:hover {
     color: var(--color-txt);
     text-decoration: underline;
+  }
+
+  .bloc-project {
+    border-bottom: solid 1px;
   }
 
   .panel {
