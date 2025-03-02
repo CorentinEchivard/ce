@@ -35,6 +35,7 @@ body {
 
 a {
   font-family:"mfbc-bold";
+  font-weight: 700;
   color: var(--color-txt);
   cursor: pointer;
   text-decoration: none;
@@ -47,12 +48,18 @@ a:hover {
 
 button {
   font-family:"mfbc-bold";
+  font-weight: 700;
   text-decoration: none;
   color: var(--color-txt);
   background: none;
   border: none;
   font-size: 1rem;
   padding: 0;
+}
+
+strong{
+  font-family:"mfbc-bold";
+  font-weight: 700;
 }
 
 button:hover {
@@ -92,6 +99,7 @@ button:hover {
 
 h1 {
   font-family:"mfbc-bold";
+  font-weight: 700;
   margin: 0;
   font-size: 2rem;
 }
