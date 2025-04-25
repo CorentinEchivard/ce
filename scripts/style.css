@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family:"mfbc-regular";
+  font-family: "MFBC";
   width: 100vw;
   max-width: 100%;
   height: auto;
@@ -34,8 +34,8 @@ body {
 }
 
 a {
-  font-family:"mfbc-bold";
-  font-weight: 700;
+  font-family: "MFBC";
+  font-variation-settings: "wght" 700;
   color: var(--color-txt);
   cursor: pointer;
   text-decoration: none;
@@ -47,8 +47,8 @@ a:hover {
 }
 
 button {
-  font-family:"mfbc-bold";
-  font-weight: 700;
+  font-family: "MFBC";
+  font-variation-settings: "wght" 700;
   text-decoration: none;
   color: var(--color-txt);
   background: none;
@@ -57,9 +57,9 @@ button {
   padding: 0;
 }
 
-strong{
-  font-family:"mfbc-bold";
-  font-weight: 700;
+strong {
+  font-family: "MFBC";
+  font-variation-settings: "wght" 700;
 }
 
 button:hover {
@@ -98,24 +98,26 @@ button:hover {
 }
 
 h1 {
-  font-family:"mfbc-bold";
-  font-weight: 700;
+  font-family: "MFBC";
+  font-variation-settings: "SRFS" 0, "STCL" 100, "wght" 400;
+  margin: 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "MFBC";
+  font-variation-settings: "SRFS" 0, "STCL" 0, "wght" 700;
   margin: 0;
   font-size: 2rem;
 }
 
-h2 {
-  font-family:"mfbc-regular";
-  font-weight: 400;
+h3 {
+  font-family: "MFBC";
+  font-variation-settings: "wght" 400;
   margin: 0;
   font-size: 1.4rem;
   line-height: 1.6rem;
-}
-
-h3 {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.4rem;
 }
 
 p {
@@ -178,7 +180,7 @@ header {
 
 .fontblocHome {
   background: var(--color-accent);
-  margin: 6rem 0rem 6rem 0rem;
+  margin: 4rem 0rem 6rem 0rem;
   padding: 6rem 3rem 5.5rem 3rem;
   display: flex;
   flex-direction: row;
@@ -328,7 +330,7 @@ header {
 }
 
 .project-div {
-  padding: 0.66666rem 10rem 5rem 10rem;
+  padding: 0.66666rem 3rem 5rem 3rem;
   text-align: center;
 }
 
@@ -345,7 +347,6 @@ header {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding-left: 2rem;
 }
 
 .active, .project:hover {
@@ -357,7 +358,7 @@ header {
   text-align: left;
   z-index: 50;
   width: 80%;
-  padding: 0.75rem 0rem 0rem 2rem;
+  padding: 0.75rem 0rem 0rem 0rem;
   font-size: 1rem;
   max-height: 0;
   overflow: hidden;
@@ -591,6 +592,12 @@ header {
 
   h2 {
     margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  h3 {
+    margin: 0;
     font-size: 1rem;
     line-height: 1.2rem;
   }
@@ -661,7 +668,6 @@ header {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding-left: 1.45rem;
     flex-direction: column;
   }
 
@@ -676,7 +682,7 @@ header {
 
   .panel {
     width: auto;
-    padding: 0.5rem 0rem 0rem 1.45rem;
+    padding: 0.5rem 0rem 0rem 0rem;
   }
 
   .fontbloc {
