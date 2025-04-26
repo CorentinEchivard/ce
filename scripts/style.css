@@ -373,7 +373,7 @@ header {
 
 .description {
   padding: 0.66666rem 1rem 0.5rem 1rem;
-  width: 75%;
+  width: 55%;
   font-size: 1rem;
 }
 
@@ -391,8 +391,8 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  width: 80%;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .imagefull, video {
@@ -407,7 +407,7 @@ header {
 
 .imageintro, .imageintroneg {
   padding: 120px 100px 130px 100px;
-  width: 60%;
+  width: 50%;
   height: auto;
 }
 
@@ -432,7 +432,7 @@ header {
 
 .imagehalf {
   padding: 150px 50px;
-  width: 40%;
+  width: 33%;
   height: auto;
 }
 
@@ -530,7 +530,7 @@ header {
   }
 
   .description {
-    width: 85%;
+    width: 75%;
   }
 
   .miniature {
