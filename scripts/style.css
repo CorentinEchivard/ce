@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: "MFBC", sans-serif;
+  font-family: "MFBC-Regular", sans-serif;
   width: 100vw;
   max-width: 100%;
   height: auto;
@@ -34,8 +34,7 @@ body {
 }
 
 a {
-  font-family: "MFBC", sans-serif;
-  font-variation-settings: "SRFS" 0, "STCL" 0, "wght" 700;
+  font-family: "MFBC-Bold", sans-serif;
   color: var(--color-txt);
   cursor: pointer;
   text-decoration: none;
@@ -47,8 +46,7 @@ a:hover {
 }
 
 button {
-  font-family: "MFBC", sans-serif;
-  font-variation-settings: "SRFS" 0, "STCL" 0, "wght" 700;
+  font-family: "MFBC-Bold", sans-serif;
   text-decoration: none;
   color: var(--color-txt);
   background: none;
@@ -58,8 +56,7 @@ button {
 }
 
 strong {
-  font-family: "MFBC", sans-serif;
-  font-variation-settings: "SRFS" 0, "STCL" 0, "wght" 700;
+  font-family: "MFBC-Bold", sans-serif;
 }
 
 button:hover {
@@ -98,23 +95,22 @@ button:hover {
 }
 
 h1 {
-  font-family: "MFBC", sans-serif;
-  font-variation-settings: "SRFS" 0, "STCL" 100, "wght" 400;
+  font-family: "MFBC-Stencil", sans-serif;
+  font-weight: 400;
   margin: 0;
   font-size: 3rem;
   text-transform: uppercase;
 }
 
 h2 {
-  font-family: "MFBC", sans-serif;
-  font-variation-settings: "SRFS" 0, "STCL" 0, "wght" 700;
+  font-family: "MFBC-Bold", sans-serif;
   margin: 0;
   font-size: 2rem;
 }
 
 h3 {
-  font-family: "MFBC", sans-serif;
-  font-variation-settings: "SRFS" 0, "STCL" 0, "wght" 400;
+  font-family: "MFBC-Regular", sans-serif;
+  font-weight: 400;
   margin: 0;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -245,7 +241,7 @@ header {
 .drop-project {
   background: var(--color-background);
   width: fit-content;
-  padding: 0.18rem 0.5rem 0.2rem 0rem;
+  padding: 0.18rem 0.2rem 0.2rem 0.2rem;
 }
 
 .dropdown-content a {
@@ -585,24 +581,18 @@ header {
   }
 
   h1 {
-    font-family: "MFBC", sans-serif;
-    font-variation-settings: "SRFS" 0, "STCL" 100, "wght" 400;
     margin: 0;
     font-size: 1.4rem;
     line-height: 1.6rem;
   }
 
   h2 {
-    font-family: "MFBC", sans-serif;
-    font-variation-settings: "SRFS" 0, "STCL" 0, "wght" 700;
     margin: 0;
     font-size: 1.4rem;
     line-height: 1.6rem;
   }
 
   h3 {
-    font-family: "MFBC", sans-serif;
-    font-variation-settings: "SRFS" 0, "STCL" 0, "wght" 400;
     margin: 0;
     font-size: 1rem;
     line-height: 1.2rem;
@@ -613,21 +603,9 @@ header {
   }
 
   a {
-    font-family: "MFBC", sans-serif;
-    font-variation-settings: "SRFS" 0, "STCL" 0, "wght" 700;
     color: var(--color-txt);
     cursor: pointer;
     text-decoration: none;
-  }
-
-  button {
-    font-family: "MFBC", sans-serif;
-    font-variation-settings: "SRFS" 0, "STCL" 0, "wght" 700;
-  }
-
-  strong {
-    font-family: "MFBC", sans-serif;
-    font-variation-settings: "SRFS" 0, "STCL" 0, "wght" 700;
   }
 
   .headfull {
