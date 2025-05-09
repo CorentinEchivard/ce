@@ -3,12 +3,14 @@ body {
   --color-background: #E5E5E5;
   --color-txt: #2F2F2F;
   --color-accent: #d8d8d8;
+  --color-accentop: #848484;
 }
 
 body.dark-theme {
   --color-background: black;
   --color-txt: #D9D9D9;
   --color-accent: #131313;
+  --color-accentop: #848484;
 }
 
 /* Website */
@@ -42,8 +44,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--color-accent);
+a:hover, button:hover {
+  color: var(--color-accentop);
   text-decoration: underline;
 }
 
@@ -56,11 +58,6 @@ button {
   border: none;
   font-size: 1rem;
   padding: 0;
-}
-
-button:hover {
-  color: var(--color-accent);
-  text-decoration: underline;
 }
 
 .theme-label.light-theme.underline-light {
@@ -94,7 +91,7 @@ button:hover {
 }
 
 h1 {
-  font-family: "MFBC-Stencil", sans-serif;
+  font-family: "MFBC-Regular", sans-serif;
   font-weight: 400;
   margin: 0;
   font-size: 3rem;
@@ -102,10 +99,11 @@ h1 {
 }
 
 h2 {
-  font-family: "MFBC-Bold", sans-serif;
+  font-family: "MFBC-Stencil", sans-serif;
   font-weight: 400;
   margin: 0;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -219,10 +217,6 @@ header {
   border: none;
 }
 
-.dropbtn:hover {
-  color: var(--color-accent);
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -245,12 +239,7 @@ header {
 }
 
 .dropdown-content a {
-  color: var(--color-txt);
   display: block;
-}
-
-.dropdown-content a:hover {
-  color: var(--color-accent);
 }
 
 .dropdown:hover .dropdown-content {
@@ -322,7 +311,7 @@ header {
 
 .bloc-project {
   padding: 0.8rem 0rem 0.6rem 0rem;
-  border-bottom: solid 2px;
+  border-bottom: solid 1px;
 }
 
 .project-div {
@@ -405,34 +394,27 @@ header {
   padding: 150px 50px;
 }
 
-.imageintro, .imageintroneg {
+.imageintro,
+.imageintroneg,
+.light-theme .imageneg,
+.light-theme .homeneg,
+.dark-theme .imageneg,
+.dark-theme .homeneg {
   padding: 120px 100px 130px 100px;
   width: 50%;
   height: auto;
 }
 
-.light-theme .imageneg, .light-theme .homeneg {
-  padding: 100px 50px;
-  width: 60%;
-  height: auto;
-  filter: invert(1);
-  mix-blend-mode: multiply;
-}
-
+.light-theme .imageneg,
+.light-theme .homeneg,
 .light-theme .imageintroneg {
   filter: invert(1);
   mix-blend-mode: multiply;
 }
 
-.dark-theme .imageneg, .dark-theme .homeneg {
-  padding: 100px 50px;
-  width: 60%;
-  height: auto;
-}
-
 .imagehalf {
-  padding: 150px 50px;
-  width: 33%;
+  padding: 150px 120px;
+  width: 26%;
   height: auto;
 }
 

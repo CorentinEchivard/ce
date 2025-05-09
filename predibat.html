@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predibat</title>
+  <link rel="stylesheet" href="scripts/style.css">
+  <link rel="stylesheet" href="scripts/MFBC.css">
+  <link rel="icon" type="image/x-icon" href="links/favicon.ico">
+</head>
+
+<body>
+
+  <!--Header-->
+
+  <header class="nav-down">
+    <div class="headfull">
+
+      <div><a href="index.html">Corentin Echivard</a></div>
+
+      <div class="menu">
+        <div class="dropdown">
+          <button class="dropbtn">Projet […]</button>
+          <div class="dropdown-content">
+            <a class="drop-project" href="milletype-foundry.html">Milletype Foundry</a>
+            <a class="drop-project" href="predibat.html">Predibat</a>
+            <a class="drop-project" href="le-44.html">Le 44</a>
+            <a class="drop-project" href="smart-city-tour.html">Smart City Tour</a>
+            <a class="drop-project" href="maintenance-controle-derapages.html">Maintenance, contrôles<br>et dérapages</a>
+            <a class="drop-project" href="images-archivees-collectees-empruntees.html">Images archivées,<br>collectées, empruntées</a>
+            <a class="drop-project" href="ephemere.html">Éphémère</a>
+            <a class="drop-project" href="recolte-citadine.html">La Récolte Citadine</a>
+            <a class="drop-project" href="webdesign.html">Web design</a>
+            <a class="drop-project" href="screenprint.html">Sérigraphie</a>
+          </div>
+        </div>
+
+        <!--Menu-->
+        <div class="item-menu"><a href="about.html">Contact</a></div>
+        <!--Light dark-->
+        <div>
+          <button class="theme-label checked light-theme" for="light" onclick="changeTheme('light')" style="margin-right:5px;">◻︎</button>
+          <button class="theme-label dark-theme" for="dark" onclick="changeTheme('dark')">◻︎</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="gallery">
+    <div class="container" style="padding:0;">
+      <img class="imageintro" src="links/img/predibat/Predibat_visitcard-zoom.webp" alt="burner Institute spécimen">
+    </div>
+  </div>
+
+  <div class="fontblocHome">
+    <div class="description">
+      <h2>Predibat</h2>
+      Branding<br>2024<br><br>
+      Smart City Tour propose des solutions personnalisées pour explorer la ville autrement, en alliant innovation et accessibilité.
+      L’identité graphique développée traduit une approche à la fois modulaire et immersive, à l’image d’une ville en mouvement,
+      où chaque parcours devient une expérience unique. Visuellement, l’univers est conviviale avec une esthétique épurée qui invite
+      à la découverte urbaine. Smart City Tour s’impose ainsi comme un guide, capable de transformer chaque balade en une exploration sur mesure.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="gallery">
+    <div class="container">
+      <img class="imagefull" src="links/img/predibat/Predibat_branding.webp" alt="Alphabet">
+      <img class="imagefull" src="links/img/predibat/Predibat_visitcard.webp" alt="Alphabet">
+      <img class="imagefull" src="links/img/predibat/Predibat_insta.webp" alt="Alphabet">
+      <img class="imagefull" src="links/img/predibat/Predibat_Website.webp" alt="Alphabet">
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="item-footer">Actuellement à Lyon, France</span><span class="item-footer">Ouvert aux collaborations</span><br>
+    <span class="item-footer">O6 76 3O 33 1O</span><a class="item-footer">corentinech[at]gmail.com</a>
+  </div>
+</body>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  // Hide header
+
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('header').outerHeight();
+
+  $(window).scroll(function(event) {
+    didScroll = true;
+  });
+
+  setInterval(function() {
+    if (didScroll) {
+      hasScrolled();
+      didScroll = false;
+    }
+  }, 250);
+
+  function hasScrolled() {
+    var st = $(this).scrollTop();
+
+    if (Math.abs(lastScrollTop - st) <= delta)
+      return;
+
+    if (st > lastScrollTop && st > navbarHeight) {
+      $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+      if (st + $(window).height() < $(document).height()) {
+        $('header').removeClass('nav-up').addClass('nav-down');
+      }
+    }
+
+    lastScrollTop = st;
+  }
+
+
+  //hover sélection projet
+
+  $('.indexhover').mousemove(function(e) {
+    $(this).find('.introgif').addClass('visible');
+    $(this).find('.introgif').css({
+      left: e.pageX,
+      top: e.pageY
+    });
+  }).mouseleave(function() {
+    $(this).find('.introgif').removeClass('visible');
+  });
+
+
+  //Accordion
+
+  var acc = document.getElementsByClassName("project");
+
+  document.body.addEventListener("click", function(event) {
+    if (!event.target.closest(".project.active")) {
+      // Close all open panels
+      var active = document.querySelectorAll(".project-div .project.active");
+      for (let j = 0; j < active.length; j++) {
+        active[j].classList.remove("active");
+        active[j].nextElementSibling.style.maxHeight = null;
+      }
+    }
+  });
+
+  for (var i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        let active = document.querySelectorAll(".project-div .project.active");
+        for (let j = 0; j < active.length; j++) {
+          active[j].classList.remove("active");
+          active[j].nextElementSibling.style.maxHeight = null;
+        }
+        this.classList.toggle("active");
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+
+
+  //Light/Dark mode user prefered
+
+  $(document).ready(function() {
+    setMode();
+    updateButtonDecoration(localStorage.getItem("mode") || "light");
+
+    // Event listener for theme change
+    $(".theme-label").on("click", function() {
+      var theme = $(this).attr("for");
+      localStorage.setItem("mode", theme);
+      setMode();
+      updateButtonDecoration(theme);
+    });
+
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function(e) {
+      if (e.matches) {
+        changeTheme('dark');
+      } else {
+        changeTheme('light');
+      }
+    });
+  });
+
+  function setMode() {
+    var mode = localStorage.getItem("mode");
+
+    if (!mode) {
+      mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+
+    $("body").removeClass("dark-theme light-theme");
+    $("body").addClass(mode + "-theme");
+
+    if (mode === "light") {
+      $(".light-theme-image").removeClass("dark-image-style");
+      $(".light-theme-image").addClass("light-image-style");
+    } else {
+      $(".light-theme-image").removeClass("light-image-style");
+      $(".light-theme-image").addClass("dark-image-style");
+    }
+  }
+
+  function updateButtonDecoration(selectedTheme) {
+    $('.theme-label').removeClass('checked underline-light underline-dark');
+    if (selectedTheme === "light") {
+      $('.theme-label.light-theme').addClass('checked underline-light');
+    } else {
+      $('.theme-label.dark-theme').addClass('checked underline-dark');
+    }
+  }
+
+  function changeTheme(theme) {
+    localStorage.setItem("mode", theme);
+    setMode();
+    updateButtonDecoration(theme);
+  }
+</script>
+
+</html>
