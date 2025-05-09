@@ -400,13 +400,13 @@ header {
 }
 
 .imagefull, video {
-  padding: 100px 50px;
+  padding: 5rem 2.5rem;
   width: 60%;
   height: auto;
 }
 
 .video {
-  padding: 150px 50px;
+  padding: 7.5rem 2.5rem;
 }
 
 .light-theme .imageneg,
@@ -414,7 +414,7 @@ header {
 .dark-theme .imageneg,
 .dark-theme .homeneg {
   padding: 4rem 1.5rem 3.5rem 1.5rem;
-  width: 65%;
+  width: 60%;
   height: auto;
 }
 
@@ -433,7 +433,7 @@ header {
 }
 
 .imagehalf {
-  padding: 150px 120px;
+  padding: 7.5rem 6rem;
   width: 26%;
   height: auto;
 }
