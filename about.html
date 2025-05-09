@@ -6,7 +6,7 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="scripts/style.css">
   <link rel="stylesheet" href="scripts/MFBC.css">
   <link rel="icon" type="image/x-icon" href="links/favicon.ico">
@@ -22,48 +22,24 @@
       <div><a href="index.html">Corentin Echivard</a></div>
 
       <div class="menu">
-        <div id="txt1on" class="dropdown .toggleDiv">
+        <div class="dropdown">
           <button class="dropbtn">Projet […]</button>
           <div class="dropdown-content">
             <a class="drop-project" href="milletype-foundry.html">Milletype Foundry</a>
-            <a class="drop-project" href="minazuki.html">MF Minazuki</a>
+            <a class="drop-project" href="predibat.html">Predibat</a>
+            <a class="drop-project" href="le-44.html">Le 44</a>
+            <a class="drop-project" href="smart-city-tour.html">Smart City Tour</a>
             <a class="drop-project" href="maintenance-controle-derapages.html">Maintenance, contrôles<br>et dérapages</a>
             <a class="drop-project" href="images-archivees-collectees-empruntees.html">Images archivées,<br>collectées, empruntées</a>
             <a class="drop-project" href="ephemere.html">Éphémère</a>
-            <a class="drop-project" href="burner-insitute.html">Burner institute</a>
             <a class="drop-project" href="recolte-citadine.html">La Récolte Citadine</a>
             <a class="drop-project" href="webdesign.html">Web design</a>
             <a class="drop-project" href="screenprint.html">Sérigraphie</a>
           </div>
         </div>
 
-        <div id="txt1off" class="dropdown .toggleDiv">
-          <button class="dropbtn">Project […]</button>
-          <div class="dropdown-content">
-            <a class="drop-project" href="milletype-foundry.html">Milletype Foundry</a>
-            <a class="drop-project" href="minazuki.html">MF Minazuki</a>
-            <a class="drop-project" href="maintenance-controle-derapages.html">Maintenance, contrôles<br>et dérapages</a>
-            <a class="drop-project" href="images-archivees-collectees-empruntees.html">Images archivées,<br>collectées, empruntées</a>
-            <a class="drop-project" href="ephemere.html">Éphémère</a>
-            <a class="drop-project" href="burner-insitute.html">Burner institute</a>
-            <a class="drop-project" href="recolte-citadine.html">La Récolte Citadine</a>
-            <a class="drop-project" href="webdesign.html">Web design</a>
-            <a class="drop-project" href="screenprint.html">Screenprint</a>
-          </div>
-        </div>
-
         <!--Menu-->
-        <div id="txt2on" class="item-menu .toggleDiv"><a href="about.html">À propos</a></div>
-        <div id="txt2off" class="item-menu .toggleDiv"><a href="about.html">About</a></div>
-        <!--Language-->
-        <div id="txt3on" class="langue .toggleDiv">
-          <button class="translate underline">Fr</button> /
-          <button class="translate" href="javascript:;" onclick="navigation(['txt1', 'txt2', 'txt3', 'txt4', 'txt5']);">En</button>
-        </div>
-        <div id="txt3off" class="langue .toggleDiv">
-          <button class="translate" href="javascript:;" onclick="navigation(['txt1', 'txt2', 'txt3', 'txt4', 'txt5']);">Fr</button> /
-          <button class="translate underline">En</button>
-        </div>
+        <div class="item-menu"><a href="about.html">Contact</a></div>
         <!--Light dark-->
         <div>
           <button class="theme-label checked light-theme" for="light" onclick="changeTheme('light')" style="margin-right:5px;">◻︎</button>
@@ -77,7 +53,6 @@
 
 
   <div class="intro">
-    <div id="txt4on" class=".toggleDiv">
       <h1>Contacts</h1><br>
         <p>Actuellement basé à Lyon.<br>
         Je suis ouvert aux collaborations.<br>
@@ -90,21 +65,6 @@
         <a href="links/CE_Portfolio25.pdf">[↓] Téléchargez mon portfolio</a><br>
         <a href="links/CE_CV25.pdf">[↓] Téléchargez mon CV</a><br>
       </p>
-    </div>
-    <div id="txt4off" class=".toggleDiv">
-      <h1>Contacts</h1><br>
-      I'm open to collaborations.<br>
-      Feel free to contact me about your project!<br>
-      Currently based in Lyon.<br><br>
-
-      <a href="mailto:corentinech@gmail.com">corentinech[at]gmail.com</a><br>
-      +33(O)6 76 3O 33 1O<br>
-      <a href="https://www.instagram.com/corentinechivard/">@corentinechivard</a><br><br>
-
-      <a href="links/CE_Portfolio25.pdf">[↓] Download my portfolio</a><br>
-      <a href="links/CE_CV25.pdf">[↓] Download my CV</a><br>
-      </p>
-    </div>
   </div>
 </body>
 
@@ -251,27 +211,5 @@
     setMode();
     updateButtonDecoration(theme);
   }
-
-
-  // Langue
-
-  function navigation(divids) {
-    for (var i = 0; i < divids.length; i++) {
-      var divid = divids[i];
-      var varon = divid + 'on';
-      var varoff = divid + 'off';
-
-      if (document.getElementById(varon).style.display === 'block') {
-        document.getElementById(varon).style.display = 'none';
-        document.getElementById(varoff).style.display = 'block';
-      } else {
-        document.getElementById(varoff).style.display = 'none';
-        document.getElementById(varon).style.display = 'block';
-      }
-    }
-  }
-
-  var divsToToggle = ['txt1', 'txt2', 'txt3', 'txt4', 'txt5'];
-  navigation(divsToToggle);
 </script>
 </html>
