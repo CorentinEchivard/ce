@@ -288,24 +288,9 @@ header {
 }
 
 .intro {
-  padding: 4rem 1rem 12rem 1rem;
+  padding: 4rem 3rem 15rem 3rem;
   width: 50%;
   font-size: 1rem;
-}
-
-.introgif {
-  left: 0;
-  top: 0;
-  position: absolute;
-  visibility: hidden;
-  pointer-events: none;
-  width: 100px;
-  height: 100px;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.introgif.visible {
-  visibility: visible;
 }
 
 .anim {
@@ -683,7 +668,7 @@ header {
   }
 
   .intro {
-    padding: 5rem 1rem 2rem 1rem;
+    padding: 7rem 1.5rem 10rem 1.5rem;
     width: 90%;
   }
 
