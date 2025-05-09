@@ -763,8 +763,9 @@ header {
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
     row-gap: 4rem;
+    column-gap: 2rem;
   }
 
   .imagefull, video {
@@ -784,14 +785,14 @@ header {
   .light-theme .homeneg,
   .dark-theme .imageneg,
   .dark-theme .homeneg {
-    padding: 2rem 0rem 1.5rem 0rem;
-    width: 80%;
+    padding: 0rem;
+    width: 85%;
     height: auto;
   }
 
   .imagehalf {
-    padding: 1rem 0rem 0.5rem 0rem;
-    width: 46%;
+    padding: 1rem 0rem 1rem 0rem;
+    width: 42%;
     height: auto;
   }
 
