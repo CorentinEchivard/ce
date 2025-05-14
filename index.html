@@ -474,21 +474,28 @@
   startInactivityTimer();
 
 
-  //Accordion
-
+  // Accordion
   var acc = document.getElementsByClassName("project");
 
   // Pour savoir si le panneau a été fixé par clic
   let lockedPanel = null;
 
-  // Gestion du clic
   for (var i = 0; i < acc.length; i++) {
     let button = acc[i];
     let panel = button.nextElementSibling;
 
     button.addEventListener("click", function(event) {
-      // Si déjà actif → rediriger vers le lien
+      const isMobile = window.innerWidth <= 768;
+
+      // Si déjà actif
       if (this.classList.contains("active")) {
+        // Sur mobile : ne redirige que si déjà verrouillé
+        if (isMobile && lockedPanel !== this) {
+          lockedPanel = this; // Verrouille à la première ouverture
+          return; // Ne redirige pas encore
+        }
+
+        // Redirige si non mobile ou déjà verrouillé
         let link = panel.querySelector("a");
         if (link) {
           window.location.href = link.href;
@@ -510,19 +517,18 @@
     });
   }
 
-  // Gestion du hover (sur le bloc complet)
+  // Gestion du hover (desktop)
   var blocs = document.querySelectorAll(".bloc-project");
 
   blocs.forEach(function(bloc) {
     let button = bloc.querySelector(".project");
     let panel = bloc.querySelector(".panel");
 
-    // Quand la souris entre dans le bloc
     bloc.addEventListener("mouseenter", function() {
-      // Ne rien faire si un autre est verrouillé
+      if (window.innerWidth <= 768) return; // Ignore le hover sur mobile
+
       if (lockedPanel && lockedPanel !== button) return;
 
-      // Fermer tous les autres projets
       let active = document.querySelectorAll(".project-div .project.active");
       for (let j = 0; j < active.length; j++) {
         if (active[j] !== button) {
@@ -531,14 +537,13 @@
         }
       }
 
-      // Ouvrir celui-ci
       button.classList.add("active");
       panel.style.maxHeight = panel.scrollHeight + "px";
     });
 
-    // Quand la souris sort du bloc
     bloc.addEventListener("mouseleave", function() {
-      // Ne pas fermer si le panneau est verrouillé
+      if (window.innerWidth <= 768) return; // Ignore le hover sur mobile
+
       if (lockedPanel === button) return;
 
       button.classList.remove("active");
@@ -554,9 +559,10 @@
         active[j].classList.remove("active");
         active[j].nextElementSibling.style.maxHeight = null;
       }
-      lockedPanel = null; // Déverrouiller
+      lockedPanel = null;
     }
   });
+
 
 
   //Light/Dark mode user prefered

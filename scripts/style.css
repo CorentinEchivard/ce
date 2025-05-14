@@ -563,6 +563,10 @@ header {
     text-decoration: none;
   }
 
+  .title {
+    padding: 0rem 0rem 2rem 0rem;
+  }
+
   .headfull {
     display: flex;
     flex-direction: column;
