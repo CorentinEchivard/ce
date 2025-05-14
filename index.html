@@ -39,7 +39,7 @@
         </div>
 
         <!--Menu-->
-        <div class="item-menu"><a href="about.html">Contacts</a></div>
+        <div class="item-menu"><a href="contacts.html">Contacts</a></div>
         <!--Light dark-->
         <div>
           <button class="theme-label checked light-theme" for="light" onclick="changeTheme('light')" style="margin-right:5px;">◻︎</button>
@@ -55,8 +55,9 @@
     <div class="fullscreen"></div>
   </div>
 
+
   <div class="fontblocProject">
-    <div class="flexhome">
+    <div class="title">
       <h1>Graphic &&nbsp;type&nbsp;design</h1>
     </div>
     <div class="description">
@@ -64,7 +65,7 @@
         Mon approche mêle recherche et expérimentation pour offrir des solutions visuelles afin de raconter votre histoire au plus juste.<br><br>
         Logo, typographie, édition ou identité visuelle : chaque projet est conçu sur-mesure pour captiver et marquer les esprits.<br><br>
         Contactez-moi pour donner vie à vos idées !<br><br>
-        <a href="about.html">→ Je commence un projet ←</a>
+        <a href="contacts.html">→ Je commence un projet ←</a>
       </h3>
     </div>
   </div>
@@ -73,7 +74,7 @@
 
   <!--Milletype Foundry-->
   <div class="project-div">
-    <div>
+    <div class="title">
       <h1>Projets</h1>
     </div>
 
@@ -114,7 +115,7 @@
     </div>
 
 
-    <!--Minazuki-->
+    <!--Predibat-->
     <div class="bloc-project">
       <button class="project">
         <div class="project-item">
@@ -135,7 +136,7 @@
       </div>
     </div>
 
-    <!--Minazuki-->
+    <!--le 44-->
     <div class="bloc-project">
       <button class="project">
         <div class="project-item">
@@ -158,7 +159,7 @@
     </div>
 
 
-    <!--Minazuki-->
+    <!--Smart city tour-->
     <div class="bloc-project">
       <button class="project">
         <div class="project-item">
@@ -169,7 +170,7 @@
           </div>
         </div>
       </button>
-      <div class="panel"><a href="minazuki.html">
+      <div class="panel"><a href="smart-city-tour.html">
           <img class="miniature" src="links/miniature/SCT_visitcard-zoom_miniature.webp" alt="burner Institute spécimen">
           <img class="miniature" src="links/miniature/SCT_website_miniature.webp" alt="Alphabet">
           <img class="miniature" src="links/miniature/SCT_visitcard_miniature.webp" alt="Alphabet">
@@ -433,10 +434,6 @@
     'links/homepage/ce_couverture-12.webp',
     'links/homepage/ce_couverture-13.webp',
     'links/homepage/ce_couverture-14.webp',
-    'links/homepage/ce_couverture-15.webp',
-    'links/homepage/ce_couverture-16.webp',
-    'links/homepage/ce_couverture-17.webp',
-
   ];
 
   const fullscreenDiv = document.querySelector('.fullscreen');
@@ -476,36 +473,90 @@
 
   startInactivityTimer();
 
+
   //Accordion
 
   var acc = document.getElementsByClassName("project");
 
-  document.body.addEventListener("click", function(event) {
-    if (!event.target.closest(".project.active")) {
-      var active = document.querySelectorAll(".project-div .project.active");
+  // Pour savoir si le panneau a été fixé par clic
+  let lockedPanel = null;
+
+  // Gestion du clic
+  for (var i = 0; i < acc.length; i++) {
+    let button = acc[i];
+    let panel = button.nextElementSibling;
+
+    button.addEventListener("click", function(event) {
+      // Si déjà actif → rediriger vers le lien
+      if (this.classList.contains("active")) {
+        let link = panel.querySelector("a");
+        if (link) {
+          window.location.href = link.href;
+          return;
+        }
+      }
+
+      // Fermer tous les autres projets
+      let active = document.querySelectorAll(".project-div .project.active");
       for (let j = 0; j < active.length; j++) {
         active[j].classList.remove("active");
         active[j].nextElementSibling.style.maxHeight = null;
       }
-    }
-  });
 
-  for (var i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        let active = document.querySelectorAll(".project-div .project.active");
-        for (let j = 0; j < active.length; j++) {
+      // Activer celui-ci
+      this.classList.add("active");
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      lockedPanel = this; // Marque ce panneau comme verrouillé
+    });
+  }
+
+  // Gestion du hover (sur le bloc complet)
+  var blocs = document.querySelectorAll(".bloc-project");
+
+  blocs.forEach(function(bloc) {
+    let button = bloc.querySelector(".project");
+    let panel = bloc.querySelector(".panel");
+
+    // Quand la souris entre dans le bloc
+    bloc.addEventListener("mouseenter", function() {
+      // Ne rien faire si un autre est verrouillé
+      if (lockedPanel && lockedPanel !== button) return;
+
+      // Fermer tous les autres projets
+      let active = document.querySelectorAll(".project-div .project.active");
+      for (let j = 0; j < active.length; j++) {
+        if (active[j] !== button) {
           active[j].classList.remove("active");
           active[j].nextElementSibling.style.maxHeight = null;
         }
-        this.classList.toggle("active");
-        panel.style.maxHeight = panel.scrollHeight + "px";
       }
+
+      // Ouvrir celui-ci
+      button.classList.add("active");
+      panel.style.maxHeight = panel.scrollHeight + "px";
     });
-  }
+
+    // Quand la souris sort du bloc
+    bloc.addEventListener("mouseleave", function() {
+      // Ne pas fermer si le panneau est verrouillé
+      if (lockedPanel === button) return;
+
+      button.classList.remove("active");
+      panel.style.maxHeight = null;
+    });
+  });
+
+  // Fermer les panneaux si clic en dehors
+  document.body.addEventListener("click", function(event) {
+    if (!event.target.closest(".project") && !event.target.closest(".panel")) {
+      let active = document.querySelectorAll(".project-div .project.active");
+      for (let j = 0; j < active.length; j++) {
+        active[j].classList.remove("active");
+        active[j].nextElementSibling.style.maxHeight = null;
+      }
+      lockedPanel = null; // Déverrouiller
+    }
+  });
 
 
   //Light/Dark mode user prefered
