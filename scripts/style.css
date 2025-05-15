@@ -19,8 +19,8 @@ html {
 }
 
 body {
-  font-family: "MFBC-Regular", sans-serif;
-  font-weight: 400;
+  font-family: "MFBC", sans-serif;
+  font-variation-settings: "wght" 400, "SRFS" 0, "STCL" 0;
   width: 100vw;
   max-width: 100%;
   height: auto;
@@ -37,8 +37,8 @@ body {
 }
 
 a {
-  font-family: "MFBC-Bold", sans-serif;
-  font-weight: 400;
+  font-family: "MFBC", sans-serif;
+  font-variation-settings: "wght" 700, "SRFS" 0, "STCL" 0;
   color: var(--color-txt);
   cursor: pointer;
   text-decoration: none;
@@ -50,8 +50,8 @@ a:hover, button:hover {
 }
 
 button {
-  font-family: "MFBC-Bold", sans-serif;
-  font-weight: 400;
+  font-family: "MFBC", sans-serif;
+  font-variation-settings: "wght" 700, "SRFS" 0, "STCL" 0;
   text-decoration: none;
   color: var(--color-txt);
   background: none;
@@ -91,29 +91,29 @@ button {
 }
 
 h1 {
-  font-family: "MFBC-Regular", sans-serif;
-  font-weight: 400;
+  font-family: "MFBC", sans-serif;
+  font-variation-settings: "wght" 400, "SRFS" 0, "STCL" 0;
   margin: 0;
   font-size: 4.5rem;
-  line-height: 5rem;
+  line-height: 4.7rem;
   text-transform: uppercase;
 }
 
 h2 {
-  font-family: "MFBC-Stencil", sans-serif;
-  font-weight: 400;
+  font-family: "MFBC", sans-serif;
+  font-variation-settings: "wght" 400, "SRFS" 0, "STCL" 100;
   margin: 0;
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 2.2rem;
   text-transform: uppercase;
 }
 
 h3 {
-  font-family: "MFBC-Regular", sans-serif;
-  font-weight: 400;
+  font-family: "MFBC", sans-serif;
+  font-variation-settings: "wght" 400, "SRFS" 0, "STCL" 0;
   margin: 0;
   font-size: 1.2rem;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
 }
 
 p {
@@ -136,19 +136,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0.7rem 1rem;
-}
-
-.header {
-  z-index: 1000;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-up {
-  top: -62px;
 }
 
 .fullscreenbloc {
@@ -361,7 +348,7 @@ header {
 
 .description {
   padding: 0.66666rem 0rem 0.5rem 0rem;
-  width: 60%;
+  width: 70%;
   font-size: 1rem;
 }
 

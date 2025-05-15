@@ -16,10 +16,10 @@
 
   <!--Header-->
 
-  <header class="nav-down">
+  <header>
     <div class="headfull">
 
-      <div><a href="index.html">Corentin Echivard</a></div>
+      <div><a href="index.html">Studio Corentin Echivard</a></div>
 
       <div class="menu">
         <div class="dropdown">
@@ -93,11 +93,14 @@
   <footer class="footerbloc">
     <div class="footer">
       <div>
-      <a href="index.html">
-        <h2>Corentin Echivard</h2>
-      </a>
-      <a href="#top">Back to top ↥</a>
-    </div>
+        <a href="index.html">
+          <h2>Studio<br>Corentin Echivard</h2>
+        </a>
+        <h3>DIRECTION ARTISTIQUE / IDENTITÉ VISUELLE<br>
+          DESIGN ÉDITORIAL<br>
+          CRÉATION DE CARACTÈRES TYPOGRAPHIQUES<br>
+          LETTRAGE SUR MESURE / TITRAGES</h3>
+      </div>
 
       <div>
         <h2>Projets</h2>
@@ -114,18 +117,11 @@
       </div>
 
       <div>
-        <h2>Contacts</h2>
-        +33[O]6 76 3O 33 1O<br>
-        corentinech[at]gmail.com<br>
-        <a href="https://www.instagram.com/corentinechivard/" target="_blank">Instagram</a><br>
-        <a href="https://milletype.fr/" target="_blank">Milletype Foundry</a>
-      </div>
-
-      <div>
         <h2>Informations</h2>
         24 Rue des Tables Claudiennes, 69001 Lyon<br>
         Ouvert aux collaborations<br>
-        Actuellement à Lyon, France
+        Actuellement à Lyon, France<br><br>
+        <a href="#top">Back to top ↥</a>
       </div>
     </div>
   </footer>
@@ -135,76 +131,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-  // Hide header
-
-  var didScroll;
-  var lastScrollTop = 0;
-  var delta = 5;
-  var navbarHeight = $('header').outerHeight();
-
-  $(window).scroll(function(event) {
-    didScroll = true;
-  });
-
-  setInterval(function() {
-    if (didScroll) {
-      hasScrolled();
-      didScroll = false;
-    }
-  }, 250);
-
-  function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    if (Math.abs(lastScrollTop - st) <= delta)
-      return;
-
-    if (st > lastScrollTop && st > navbarHeight) {
-      $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-      if (st + $(window).height() < $(document).height()) {
-        $('header').removeClass('nav-up').addClass('nav-down');
-      }
-    }
-
-    lastScrollTop = st;
-  }
-
-  //Accordion
-
-  var acc = document.getElementsByClassName("project");
-
-  // Add click event listener to the document body
-  document.body.addEventListener("click", function(event) {
-    // Check if the clicked element is not within an active project
-    if (!event.target.closest(".project.active")) {
-      // Close all open panels
-      var active = document.querySelectorAll(".project-div .project.active");
-      for (let j = 0; j < active.length; j++) {
-        active[j].classList.remove("active");
-        active[j].nextElementSibling.style.maxHeight = null;
-      }
-    }
-  });
-
-  for (var i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        let active = document.querySelectorAll(".project-div .project.active");
-        for (let j = 0; j < active.length; j++) {
-          active[j].classList.remove("active");
-          active[j].nextElementSibling.style.maxHeight = null;
-        }
-        this.classList.toggle("active");
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-    });
-  }
-
-
   //Light/Dark mode user prefered
 
   $(document).ready(function() {
