@@ -388,6 +388,10 @@ header.scrolled .head {
   padding-bottom: 4.8rem;
 }
 
+.marginbotttt {
+  margin-bottom: 4.8rem;
+}
+
 .paddinginfo {
   margin-bottom: 0rem;
 }
@@ -881,6 +885,10 @@ video {
 
   .paddingbotttt {
     padding-bottom: 1.6rem;
+  }
+
+  .marginbotttt {
+    margin-bottom: 1.6rem;
   }
 
   .paddinginfo {
