@@ -389,6 +389,10 @@ header.scrolled .head {
   padding-bottom: 4.8rem;
 }
 
+.paddinginfo {
+  margin-bottom: 0rem;
+}
+
 /* HOMEPAGE */
 .animhomebloc {
   position: absolute;
@@ -702,12 +706,12 @@ video {
 
   h3 {
     font-size: 2rem;
-    line-height: 2rem;
+    line-height: 2.4rem;
   }
 
   h4 {
     font-size: 1.6rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
   }
 
   h5 {
@@ -864,7 +868,7 @@ video {
   }
 
   .sectionbig {
-    height: 90%;
+    height: 82vh;
   }
 
   .paddingbot {
@@ -877,6 +881,10 @@ video {
 
   .paddingbotttt {
     padding-bottom: 1.6rem;
+  }
+
+  .paddinginfo {
+    margin-bottom: 1.2rem;
   }
 
   /* HOMEPAGE */
