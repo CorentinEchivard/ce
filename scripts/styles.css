@@ -390,10 +390,6 @@ header.scrolled .head {
   padding-bottom: 4.8rem;
 }
 
-.marginbotttt {
-  margin-bottom: 4.8rem;
-}
-
 .paddinginfo {
   margin-bottom: 0rem;
 }
@@ -575,23 +571,14 @@ video {
 
 .typeface-section {
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 4.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.typeface-title {
-  font-size: 1.5rem;
-  font-weight: normal;
-  margin-bottom: 2rem;
-  color: var(--text-color);
-  padding-bottom: 1rem;
-}
-
 .text-block {
   display: flex;
-  padding-bottom: 2.4rem;
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -623,7 +610,7 @@ video {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding-top: 2rem;
+  padding: 2.4rem 0rem 4.8rem 0rem;
 }
 
 .control-group {
@@ -964,10 +951,6 @@ video {
     padding-bottom: 1.6rem;
   }
 
-  .marginbotttt {
-    margin-bottom: 1.6rem;
-  }
-
   .paddinginfo {
     margin-bottom: 1.2rem;
   }
@@ -1056,19 +1039,11 @@ video {
 
   .typeface-section {
     width: 100%;
-    margin-bottom: 4rem;
-  }
-
-  .typeface-title {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: var(--text-color);
-    padding-bottom: 1rem;
+    margin-bottom: 2.4rem;
   }
 
   .text-block {
     display: flex;
-    padding-bottom: 2.4rem;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -1091,6 +1066,7 @@ video {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 1.2rem 0rem 2.4rem 0rem;
   }
 
   .control-group {
