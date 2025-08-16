@@ -71,7 +71,7 @@
 
   <div class="section projet">
     <video class="optimized-video" id="mainVideo" autoplay muted loop playsinline preload="metadata" poster="links/CE_Showreel.webp">
-      <source src="links/CE_Showreel.webm" type="video/webm">
+      <source src="links/CE_Showreel.mp4" type="video/mp4">
       <div class="ios-fallback">
         <p>Votre navigateur ne supporte pas la lecture vidéo HTML5.</p>
       </div>
@@ -81,6 +81,7 @@
       ▶
     </button>
   </div>
+
 
   <div class="section projet">
     <img src="links/titre_selection.svg" class="imgtitle paddingbotttt" alt="Titrage pour les projets sélectionnés">
@@ -321,7 +322,7 @@
     });
 
     document.addEventListener('DOMContentLoaded', function() {
-      setTimeout(initializeVideo, 100);
+      setTimeout(initializeVideo, 10);
     });
 
     video.addEventListener('loadstart', function() {
