@@ -53,7 +53,7 @@
         <h4 class="paddingbot">Studio Corentin Echivard</h4>
         <h1 class="paddingbott">Studio de design spécialisé dans le branding et la typographie, j’accompagne les marques dans l’élaboration de leur projet créatif.</h1>
         <div class="flexcol">
-          <span class="bulle">Direction Artistique</span>
+          <span class="bulle">Direction&nbsp;Artistique</span>
           <span class="bulle">Branding</span>
           <span class="bulle">Typographie</span>
           <span class="bulle">Édition</span>
@@ -158,16 +158,16 @@
       </div>
       <div class="itemquart">
         <h5>Liens</h5>
-        <a href="https://milletype.fr/">
+        <a target="_blank" href="https://milletype.fr/">
           <h4>Milletype Foundry</h4>
         </a>
-        <a href="https://www.linkedin.com/in/corentinechivard/">
+        <a target="_blank" href="https://www.linkedin.com/in/corentinechivard/">
           <h4>LinkedIn</h4>
         </a>
-        <a href="https://www.instagram.com/corentinechivard/">
+        <a target="_blank" href="https://www.instagram.com/corentinechivard/">
           <h4>Instagram</h4>
         </a>
-        <a href="https://www.malt.fr/profile/corentinechivard1">
+        <a target="_blank" href="https://www.malt.fr/profile/corentinechivard1">
           <h4>Malt</h4>
         </a>
       </div>
@@ -275,38 +275,31 @@
     });
 
     //video
-    // Détection de l'environnement
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
     const isSafari = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
 
     const video = document.getElementById('mainVideo');
     const playButton = document.getElementById('playButton');
 
-    // Configuration pour l'autoplay sur mobile
     function initializeVideo() {
-      // Tentative d'autoplay
       const playPromise = video.play();
 
       if (playPromise !== undefined) {
         playPromise.then(() => {
-          // Autoplay réussi
           console.log('Autoplay réussi');
           playButton.style.display = 'none';
         }).catch(error => {
-          // Autoplay bloqué, afficher le bouton play
           console.log('Autoplay bloqué, bouton manuel nécessaire');
           playButton.style.display = 'block';
         });
       }
     }
 
-    // Fonction de lecture manuelle
     function playVideo() {
       video.play();
       playButton.style.display = 'none';
     }
 
-    // Gestion du chargement de la vidéo
     video.addEventListener('loadeddata', function() {
       console.log('Vidéo chargée');
     });
@@ -315,14 +308,12 @@
       initializeVideo();
     });
 
-    // Gestion des erreurs
     video.addEventListener('error', function(e) {
       console.error('Erreur de chargement vidéo:', e);
       playButton.innerHTML = '⚠️';
       playButton.style.display = 'block';
     });
 
-    // Interaction utilisateur pour débloquer l'autoplay
     document.addEventListener('touchstart', function() {
       if (video.paused) {
         initializeVideo();
@@ -331,18 +322,14 @@
       once: true
     });
 
-    // Au chargement de la page
     document.addEventListener('DOMContentLoaded', function() {
-      // Petite pause pour laisser le DOM se stabiliser
       setTimeout(initializeVideo, 100);
     });
 
-    // Optimisation des performances
     video.addEventListener('loadstart', function() {
       console.log('Début du chargement vidéo');
     });
 
-    // Gestion de la mise en pause/reprise lors du changement de visibilité
     document.addEventListener('visibilitychange', function() {
       if (document.hidden) {
         video.pause();

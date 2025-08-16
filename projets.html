@@ -47,12 +47,21 @@
     </div>
   </div>
 
-  <div class="section">
-    <video src="" autoplay poster="links/video.webp">
-      Votre navigateur ne permet pas de lire les vidéos. Mais vous pouvez toujours
-      <a href="fichiervideo.webm">la télécharger</a> !
+  <div class="section projet">
+    <video class="optimized-video" id="mainVideo" autoplay muted loop playsinline preload="metadata"
+      poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' fill='%23666' text-anchor='middle' dy='.3em'%3EChargement de la vidéo...%3C/text%3E%3C/svg%3E">
+      <source src="links/CE_Showreel.mp4" type="video/mp4">
+      <source src="votre-video.webm" type="video/webm">
+      <div class="ios-fallback">
+        <p>Votre navigateur ne supporte pas la lecture vidéo HTML5.</p>
+      </div>
     </video>
+
+    <button class="play-button" id="playButton" onclick="playVideo()">
+      ▶
+    </button>
   </div>
+
 
   <div class="section projet">
     <div class="flexwrap">
@@ -147,16 +156,16 @@
       </div>
       <div class="itemquart">
         <h5>Liens</h5>
-        <a href="https://milletype.fr/">
+        <a target="_blank" href="https://milletype.fr/">
           <h4>Milletype Foundry</h4>
         </a>
-        <a href="https://www.linkedin.com/in/corentinechivard/">
+        <a target="_blank" href="https://www.linkedin.com/in/corentinechivard/">
           <h4>LinkedIn</h4>
         </a>
-        <a href="https://www.instagram.com/corentinechivard/">
+        <a target="_blank" href="https://www.instagram.com/corentinechivard/">
           <h4>Instagram</h4>
         </a>
-        <a href="https://www.malt.fr/profile/corentinechivard1">
+        <a target="_blank" href="https://www.malt.fr/profile/corentinechivard1">
           <h4>Malt</h4>
         </a>
       </div>
@@ -261,6 +270,70 @@
     document.addEventListener('touchmove', (e) => {
       let touch = e.touches[0];
       handleMove(touch.clientX);
+    });
+
+    //video
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isSafari = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
+
+    const video = document.getElementById('mainVideo');
+    const playButton = document.getElementById('playButton');
+
+    function initializeVideo() {
+      const playPromise = video.play();
+
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          console.log('Autoplay réussi');
+          playButton.style.display = 'none';
+        }).catch(error => {
+          console.log('Autoplay bloqué, bouton manuel nécessaire');
+          playButton.style.display = 'block';
+        });
+      }
+    }
+
+    function playVideo() {
+      video.play();
+      playButton.style.display = 'none';
+    }
+
+    video.addEventListener('loadeddata', function() {
+      console.log('Vidéo chargée');
+    });
+
+    video.addEventListener('canplaythrough', function() {
+      initializeVideo();
+    });
+
+    video.addEventListener('error', function(e) {
+      console.error('Erreur de chargement vidéo:', e);
+      playButton.innerHTML = '⚠️';
+      playButton.style.display = 'block';
+    });
+
+    document.addEventListener('touchstart', function() {
+      if (video.paused) {
+        initializeVideo();
+      }
+    }, {
+      once: true
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(initializeVideo, 100);
+    });
+
+    video.addEventListener('loadstart', function() {
+      console.log('Début du chargement vidéo');
+    });
+
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        video.pause();
+      } else if (!video.paused) {
+        video.play();
+      }
     });
   </script>
 
