@@ -20,6 +20,16 @@
   <link rel="icon" type="image/x-icon" href="links/favicon.ico">
   <link rel="canonical" href="https://corentinechivard.com/milletype-foundry" />
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GTS550GS9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GTS550GS9Y');
+</script>
+
 
 <body>
 
@@ -922,9 +932,102 @@
 
 
     // Slider
-
     document.addEventListener('DOMContentLoaded', function() {
 
+      // Configuration responsive
+      const BREAKPOINTS = {
+        mobile: 480,
+        tablet: 768,
+        desktop: 1024
+      };
+
+      const SCALE_FACTORS = {
+        mobile: {
+          size: 0.4,
+          spacing: 0.6,
+          minSize: 12,
+          maxSize: 120
+        },
+        tablet: {
+          size: 0.6,
+          spacing: 0.8,
+          minSize: 14,
+          maxSize: 180
+        },
+        desktop: {
+          size: 1,
+          spacing: 1,
+          minSize: 12,
+          maxSize: 300
+        }
+      };
+
+      // Détecter le type d'appareil
+      function getDeviceType() {
+        const width = window.innerWidth;
+        if (width <= BREAKPOINTS.mobile) return 'mobile';
+        if (width <= BREAKPOINTS.tablet) return 'tablet';
+        return 'desktop';
+      }
+
+      // Calculer la valeur responsive
+      function getResponsiveValue(originalValue, property) {
+        const deviceType = getDeviceType();
+        const scaleFactor = SCALE_FACTORS[deviceType][property] || 1;
+
+        let newValue = originalValue * scaleFactor;
+
+        if (property === 'size') {
+          const minSize = SCALE_FACTORS[deviceType].minSize;
+          const maxSize = SCALE_FACTORS[deviceType].maxSize;
+          newValue = Math.max(minSize, Math.min(maxSize, newValue));
+        }
+
+        return Math.round(newValue);
+      }
+
+      // Sauvegarder et adapter les sliders pour le responsive
+      function setupResponsiveSliders() {
+        document.querySelectorAll('.text-block').forEach(block => {
+          block.querySelectorAll('input[type="range"]').forEach(slider => {
+            const id = slider.id;
+
+            // Sauvegarder les valeurs originales si pas déjà fait
+            if (!slider.hasAttribute('data-original-value')) {
+              slider.setAttribute('data-original-value', slider.value);
+              slider.setAttribute('data-original-min', slider.min);
+              slider.setAttribute('data-original-max', slider.max);
+            }
+
+            // Adapter les valeurs selon l'appareil
+            const originalValue = parseFloat(slider.getAttribute('data-original-value'));
+
+            if (id.includes('size')) {
+              const newValue = getResponsiveValue(originalValue, 'size');
+              slider.value = newValue;
+
+              // Adapter les limites du slider
+              const deviceType = getDeviceType();
+              if (deviceType === 'mobile') {
+                slider.min = Math.max(8, originalValue * 0.2);
+                slider.max = Math.min(150, originalValue * 0.8);
+              } else if (deviceType === 'tablet') {
+                slider.min = Math.max(10, originalValue * 0.3);
+                slider.max = Math.min(200, originalValue * 0.9);
+              } else {
+                slider.min = slider.getAttribute('data-original-min');
+                slider.max = slider.getAttribute('data-original-max');
+              }
+
+            } else if (id.includes('spacing')) {
+              const newValue = getResponsiveValue(originalValue, 'spacing');
+              slider.value = newValue;
+            }
+          });
+        });
+      }
+
+      // Initialisation des contrôles (votre code original avec ajouts)
       document.querySelectorAll('.text-block').forEach(block => {
         const textDisplay = block.querySelector('.text-display');
 
@@ -953,6 +1056,7 @@
         });
       });
 
+      // Vos fonctions originales
       function getUnit(id) {
         if (id.includes('size') || id.includes('spacing')) {
           return 'px';
@@ -1030,25 +1134,57 @@
         };
       }
 
-      const debouncedSyncSliders = debounce(syncSliders, 150);
-      window.addEventListener('resize', debouncedSyncSliders);
+      // Fonction responsive de resize (nouvelle)
+      function handleResponsiveResize() {
+        setupResponsiveSliders();
 
+        // Déclencher les événements input pour mettre à jour l'affichage
+        document.querySelectorAll('input[type="range"]').forEach(slider => {
+          const event = new Event('input', {
+            bubbles: true
+          });
+          slider.dispatchEvent(event);
+        });
+      }
+
+      // Event listeners (modifiés pour inclure le responsive)
+      const debouncedResponsiveResize = debounce(handleResponsiveResize, 200);
+      window.addEventListener('resize', debouncedResponsiveResize);
+
+      // Détection du changement d'orientation
+      window.addEventListener('orientationchange', () => {
+        setTimeout(handleResponsiveResize, 100);
+      });
+
+      // Initialisation responsive
+      setupResponsiveSliders();
       syncSliders();
 
+      // Vos fonctions utilitaires originales (modifiées pour le responsive)
       window.resetTextBlock = function(blockElement) {
         const sliders = blockElement.querySelectorAll('input[type="range"]');
         const textDisplay = blockElement.querySelector('.text-display');
 
         sliders.forEach(slider => {
-          const defaultValue = slider.getAttribute('value') || slider.defaultValue;
-          slider.value = defaultValue;
+          // Utiliser la valeur originale responsive plutôt que la valeur par défaut
+          const originalValue = slider.getAttribute('data-original-value') || slider.defaultValue;
+          const id = slider.id;
+
+          let resetValue = originalValue;
+          if (id.includes('size')) {
+            resetValue = getResponsiveValue(parseFloat(originalValue), 'size');
+          } else if (id.includes('spacing')) {
+            resetValue = getResponsiveValue(parseFloat(originalValue), 'spacing');
+          }
+
+          slider.value = resetValue;
 
           const valueSpan = blockElement.querySelector(`#${slider.id}-value`);
           if (valueSpan) {
-            valueSpan.textContent = defaultValue + getUnit(slider.id);
+            valueSpan.textContent = resetValue + getUnit(slider.id);
           }
 
-          applyStyle(textDisplay, slider.id, defaultValue);
+          applyStyle(textDisplay, slider.id, resetValue);
         });
       };
 
@@ -1066,7 +1202,26 @@
         });
       };
 
+      // Nouvelles fonctions utilitaires responsive
+      window.getCurrentDeviceType = getDeviceType;
+
+      window.debugResponsive = function() {
+        console.log('Device type:', getDeviceType());
+        console.log('Window width:', window.innerWidth);
+        console.log('Scale factors:', SCALE_FACTORS[getDeviceType()]);
+      };
+
+      window.setResponsiveMode = function(mode) {
+        // Forcer un mode pour les tests
+        const originalGetDeviceType = getDeviceType;
+        window.getDeviceType = () => mode;
+        handleResponsiveResize();
+        setTimeout(() => {
+          window.getDeviceType = originalGetDeviceType;
+        }, 100);
+      };
     });
   </script>
 </body>
+
 </html>

@@ -76,6 +76,7 @@ a:hover {
   font-variation-settings: "wght" 400;
   text-transform: uppercase;
   margin: 0;
+  word-break: keep-all;
 }
 
 .bulle {
@@ -345,6 +346,7 @@ header.scrolled .head {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-end;
   gap: 2.4rem;
 }
 
@@ -670,6 +672,81 @@ video {
   background: var(--text-color);
   cursor: pointer;
   border: none;
+}
+
+@media screen and (max-width:960px) {
+
+  .bulle,
+  .bullefat {
+    border: solid 1px;
+    word-break: keep-all;
+  }
+
+  .bulle {
+    font-size: 1.8rem;
+    line-height: 1.2rem;
+  }
+
+  .bullefat {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  h5 {
+    font-size: 1.0rem;
+    line-height: 1.0rem;
+  }
+
+  .section {
+    padding: 3.6rem 2.4rem;
+  }
+
+  .widthtier {
+    width: 100%;
+  }
+
+  .flexcol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  .flexwrap {
+    gap: 2rem;
+  }
+
+  .coverprojet {
+    height: 300px;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .gifbloc {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width:640px) {
