@@ -1,0 +1,11 @@
+# robots.txt for corentinechivard.com
+
+User-agent: *
+Disallow: /scripts/
+Disallow: /links/
+Disallow: /admin/
+Disallow: /private/
+
+Allow: /
+
+Sitemap: https://corentinechivard.com/sitemap.xml
