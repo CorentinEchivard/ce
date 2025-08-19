@@ -2,11 +2,7 @@
 <html lang="fr">
 
 <head>
-  <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable" />
-  <meta http-equiv="Pragma" content="public" />
-  <meta http-equiv="Expires" content="31536000" />
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projets — Tous les projets de graphisme et typographie</title>
   <meta name="description" content="Sélection de projets de design graphique et typographique réalisés par Corentin Echivard : éditions, identités visuelles et recherches." />
@@ -14,6 +10,7 @@
   <link rel="stylesheet" href="scripts/styles.css">
   <link rel="stylesheet" href="scripts/t1.css">
   <link rel="icon" type="image/x-icon" href="links/favicon.ico">
+  <link rel="preload" as="image" href="links/titre_projets.svg" fetchpriority="high">
   <link rel="canonical" href="https://corentinechivard.com/projets/" />
 </head>
 <!-- Google tag (gtag.js) -->
@@ -47,7 +44,7 @@
 
   <div class="section brown sectionbig">
     <div class="title">
-      <img src="links/titre_projets.svg" class="imgtitle" alt="Titrage de tête Projets">
+      <img src="links/titre_projets.svg" class="imgtitle" alt="Titrage de tête Projets"  fetchpriority="high" loading="eager" decoding="sync">
     </div>
     <div class="animhomebloc" id="top">
       <div class="animhome"></div>
