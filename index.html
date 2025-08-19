@@ -2,11 +2,7 @@
 <html lang="fr">
 
 <head>
-  <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable" />
-  <meta http-equiv="Pragma" content="public" />
-  <meta http-equiv="Expires" content="31536000" />
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Corentin Echivard — Graphic & Type Design Studio</title>
   <meta name="description" content="Studio de design spécialisé en typographie, identité de marque et édition. Projets sur-mesure pour marques et institutions." />
@@ -14,6 +10,7 @@
   <link rel="stylesheet" href="scripts/styles.css">
   <link rel="stylesheet" href="scripts/t1.css">
   <link rel="icon" type="image/x-icon" href="links/favicon.ico">
+  <link rel="preload" as="image" href="links/titre_graphic.svg" fetchpriority="high">
   <link rel="canonical" href="https://corentinechivard.com/" />
 </head>
 <!-- Google tag (gtag.js) -->
@@ -47,7 +44,7 @@
 
   <div class="section brown sectionbig">
     <div class="title">
-      <img src="links/titre_graphic.svg" class="imgtitle" alt="Titrage de tête Graphic & type design">
+      <img src="links/titre_graphic.svg" class="imgtitle" alt="Titrage de tête Graphic & type design" fetchpriority="high" loading="eager" decoding="sync">
     </div>
     <div class="animhomebloc" id="top">
       <div class="animhome"></div>
