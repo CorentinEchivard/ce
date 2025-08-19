@@ -4,65 +4,77 @@
   <!-- Pages générales -->
   <url>
     <loc>https://corentinechivard.com/</loc>
-    <priority>1.0</priority>
+    <lastmod>2025-08-19</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://corentinechivard.com/informations</loc>
-    <priority>0.8</priority>
+    <lastmod>2025-08-19</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Portfolio -->
   <url>
     <loc>https://corentinechivard.com/projets</loc>
-    <priority>0.9</priority>
+    <lastmod>2025-08-19</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://corentinechivard.com/milletype-foundry</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-08-19</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://corentinechivard.com/predibat</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-08-19</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://corentinechivard.com/le-44</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-08-19</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://corentinechivard.com/smart-city-tour</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-08-19</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://corentinechivard.com/maintenance-controles-derapages</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-08-19</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://corentinechivard.com/images-archivees-collectees-empruntees</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-08-19</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://corentinechivard.com/ephemere</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-08-19</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://corentinechivard.com/recolte-citadine</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-08-19</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://corentinechivard.com/screenprint</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-08-19</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
