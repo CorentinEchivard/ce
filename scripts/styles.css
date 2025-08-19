@@ -287,13 +287,13 @@ header.scrolled .head {
 }
 
 .widthwrap {
-  max-height: 900px;
+  max-height: 92vh;
   width: calc(50% - 1.2rem);
   object-fit: cover;
 }
 
 .widthwrappro {
-  max-height: 900px;
+  max-height: 92vh;
   width: calc(50% - 1.2rem);
   object-fit: cover;
 }
@@ -404,9 +404,9 @@ header.scrolled .head {
 
 .animhome {
   width: 100vw;
-  max-width: 400px;
+  max-width: 25vw;
   height: 100vh;
-  max-height: 550px;
+  max-height: 44vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -435,7 +435,7 @@ header.scrolled .head {
 }
 
 .imgprojetfull {
-  max-height: 900px;
+  max-height: 92vh;
   object-fit: cover;
 }
 
@@ -471,7 +471,8 @@ header.scrolled .head {
 }
 
 .headprojetimg {
-  max-height: 300px;
+  max-height: 44vh;
+  max-width: 25vw;
   background-size: contain;
   transition: filter 0.25s ease;
 }
@@ -495,7 +496,7 @@ header.scrolled .head {
   background: black;
   width: 100%;
   height: 100vh;
-  max-height: 800px;
+  max-height: 85vh;
 }
 
 .gif {
@@ -864,13 +865,11 @@ video {
   }
 
   .widthwrap {
-    max-height: 900px;
     width: 100%;
     object-fit: cover;
   }
 
   .widthwrappro {
-    max-height: 900px;
     width: 100%;
     object-fit: cover;
   }
@@ -962,7 +961,7 @@ video {
   }
 
   .imgprojetfull {
-    max-height: 900px;
+    max-height: 92vh;
     object-fit: cover;
   }
 
