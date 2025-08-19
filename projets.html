@@ -2,22 +2,29 @@
 <html lang="fr">
 
 <head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projets — Tous les projets de graphisme et typographie</title>
   <meta name="description" content="Sélection de projets de design graphique et typographique réalisés par Corentin Echivard : éditions, identités visuelles et recherches." />
-  <!-- Versions -->
   <link rel="stylesheet" href="scripts/styles.css">
   <link rel="stylesheet" href="scripts/t1.css">
   <link rel="icon" type="image/x-icon" href="links/favicon.ico">
-  <link rel="preload" as="image" href="links/titre_projets.svg" fetchpriority="high">
-  <link rel="canonical" href="https://corentinechivard.com/projets/" />
+  <link rel="preload" as="image" href="links/CE_Showreel.webp" fetchpriority="high">
+  <link rel="canonical" href="https://corentinechivard.com/projets" />
+  <meta property="og:title" content="Corentin Echivard — Graphic & Type Design Studio">
+  <meta property="og:description" content="Studio de design spécialisé en typographie, identité de marque et édition.">
+  <meta property="og:image" content="https://corentinechivard.com/links/img/prj_milletype.webp">
+  <meta property="og:url" content="https://corentinechivard.com/projets">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GTS550GS9Y"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
   gtag('js', new Date());
 
   gtag('config', 'G-GTS550GS9Y');
@@ -44,7 +51,7 @@
 
   <div class="section brown sectionbig">
     <div class="title">
-      <img src="links/titre_projets.svg" class="imgtitle" alt="Titrage de tête Projets"  fetchpriority="high" loading="eager" decoding="sync">
+      <img src="links/titre_projets.svg" class="imgtitle" alt="Titrage de tête Projets">
     </div>
     <div class="animhomebloc" id="top">
       <div class="animhome"></div>
@@ -52,7 +59,7 @@
   </div>
 
   <div class="section projet">
-    <video class="optimized-video" id="mainVideo" autoplay muted loop playsinline preload="metadata" poster="links/CE_Showreel.webp">
+    <video class="optimized-video" id="mainVideo" autoplay muted loop playsinline preload="metadata" poster="links/CE_Showreel.webp" fetchpriority="high" loading="eager" decoding="sync">
       <source src="links/CE_Showreel.mp4" type="video/mp4">
       <div class="ios-fallback">
         <p>Votre navigateur ne supporte pas la lecture vidéo HTML5.</p>
