@@ -2,7 +2,6 @@
 
 User-agent: *
 Disallow: /scripts/
-Disallow: /links/
 Disallow: /admin/
 Disallow: /private/
 
