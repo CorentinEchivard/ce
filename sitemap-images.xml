@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Page d'accueil - 4 images -->
+  <url>
+    <loc>https://corentinechivard.com/</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/corentin-echivard_prj_milletype.webp</image:loc>
+      <image:caption>Titrage de présentation Milletype Foundry, spécimen typographique MF Beach Club</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/corentin-echivard_prj_predibat.webp</image:loc>
+      <image:caption>Zoom sur carte de visite Predibat, design minimal et logo typographique</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/corentin-echivard_prj_le44.webp</image:loc>
+      <image:caption>Zoom sur carte de visite du café Le 44, design élégant et typographie artisanale</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/corentin-echivard_prj_sct.webp</image:loc>
+      <image:caption>Zoom sur carte de visite Smart City Tour avec design minimal et logo typographique</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+  </url>
+
+  <!-- Page Informations - 5 images -->
+  <url>
+    <loc>https://corentinechivard.com/informations</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/corentin-echivard_info_puces-typo-1.webp</image:loc>
+      <image:caption>Photographie de Corentin Echivard et Romain Marc prise lors de notre participations aux Puces Typos au Campus Fonderie de l'Image</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/corentin-echivard_info_puces-typo-2.webp</image:loc>
+      <image:caption>Photographie de nos produits lors de notre participations aux Puces Typos au Campus Fonderie de l'Image</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/corentin-echivard_info_slanted-1.webp</image:loc>
+      <image:caption>Photographie des pages dédiées à Milletype Foundry dans le Slanted Independent Type II</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/corentin-echivard_info_slanted-2.webp</image:loc>
+      <image:caption>Photographie de la couverture du Slanted Independent Type II où Milletype Foundry était publiée</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/corentin-echivard_info_slanted-3.webp</image:loc>
+      <image:caption>Photographie de la liste mentionnant  Milletype Foundry dans le Slanted Independent Type II</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+  </url>
+
+  <!-- Page Projets - 9 images -->
+  <url>
+    <loc>https://corentinechivard.com/projets</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/corentin-echivard_prj_sct.webp</image:loc>
+      <image:caption>Zoom sur carte de visite Smart City Tour avec design minimal et logo typographique</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/corentin-echivard_prj_recolte-citadine.webp</image:loc>
+      <image:caption>Affiche événementielle La Récolte Citadine sur panneau public</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/corentin-echivard_prj_screenprint.webp</image:loc>
+      <image:caption>T-shirt Milletype imprimé en sérigraphie avec motif graphique expérimental</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/corentin-echivard_prj_predibat.webp</image:loc>
+      <image:caption>Zoom sur carte de visite Predibat, design minimal et logo typographique</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/corentin-echivard_prj_milletype.webp</image:loc>
+      <image:caption>Titrage de présentation Milletype Foundry, spécimen typographique MF Beach Club</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/corentin-echivard_prj_mcd.webp</image:loc>
+      <image:caption>Livret reportage, double photo de la typographie Illico sur panneau urbain</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/corentin-echivard_prj_le44.webp</image:loc>
+      <image:caption>Zoom sur carte de visite du café Le 44, design élégant et typographie artisanale</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/corentin-echivard_prj_ephemere.webp</image:loc>
+      <image:caption>Page intérieure du livre Éphémère inspirée du rasoir d'Ockham</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/corentin-echivard_prj_design-thesis.webp</image:loc>
+      <image:caption>Page intérieure du livre de thèse « Images archivées, collectées, empruntées »</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+  </url>
+
+  <!-- Page Éphémère - 9 images -->
+  <url>
+    <loc>https://corentinechivard.com/ephemere</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/ephemere/corentin-echivard_prj-petit_ephemere.webp</image:loc>
+      <image:caption>Double page intérieure du livre Éphémère avec marque page</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/ephemere/corentin-echivard_ephemere_6.webp</image:loc>
+      <image:caption>Couverture du livre Éphémère présenté sur une ardoise noire, mise en scène photographique</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/ephemere/corentin-echivard_ephemere_ardoise.webp</image:loc>
+      <image:caption>Couverture du livre Éphémère présenté sur une ardoise noire, mise en scène photographique</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/ephemere/corentin-echivard_ephemere_5.webp</image:loc>
+      <image:caption>Extrait de texte du livre Éphémère imprimée sur papier croquis Canson 90g</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/ephemere/corentin-echivard_ephemere_4.webp</image:loc>
+      <image:caption>Double page illustrée du livre Éphémère avec effets visuels éphémères</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/ephemere/corentin-echivard_ephemere_3.webp</image:loc>
+      <image:caption>Détail graphique et typographique du livre Éphémère</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/ephemere/corentin-echivard_ephemere_2.webp</image:loc>
+      <image:caption>Page intérieure du livre Éphémère inspirée du rasoir d'Ockham</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/ephemere/corentin-echivard_ephemere_1.webp</image:loc>
+      <image:caption>Couverture du livre Éphémère</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/ephemere/corentin-echivard_ephemere_0.gif</image:loc>
+      <image:caption>Animation montrant l'ensemble du livre Éphémère feuilleté</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+  </url>
+
+  <!-- Page Le 44 - 7 images -->
+  <url>
+    <loc>https://corentinechivard.com/le-44</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/le-44/corentin-echivard_prj-petit_le44.webp</image:loc>
+      <image:caption>Zoom sur carte de visite du café Le 44, design élégant et typographie artisanale</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/le-44/corentin-echivard_le44_visitcard.webp</image:loc>
+      <image:caption>Carte de visite du café Le 44, recto verso avec logo et typographie artisanale réalisée par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/le-44/corentin-echivard_le44_branding.webp</image:loc>
+      <image:caption>Présentation complète de l'identité visuelle du café Le 44 conçue par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/le-44/corentin-echivard_le44_enseigne.webp</image:loc>
+      <image:caption>Enseigne du café Le 44 avec lettrage sur mesure et finition artisanale réalisée par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/le-44/corentin-echivard_le44_menu.webp</image:loc>
+      <image:caption>Menu du café Le 44 avec mise en page épurée et typographie soignée développé par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/le-44/corentin-echivard_le44_pancarte.webp</image:loc>
+      <image:caption>Pancarte extérieure du café Le 44, design sobre et accueillant conçue par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/le-44/corentin-echivard_le44_visitcard-zoom.webp</image:loc>
+      <image:caption>Zoom sur la carte de visite du café Le 44, recto verso avec logo et typographie artisanale réalisée par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+  </url>
+
+  <!-- Page Maintenance Contrôles Dérapages - 16 images -->
+  <url>
+    <loc>https://corentinechivard.com/maintenance-controles-derapages</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_1-1.webp</image:loc>
+      <image:caption>Poème en typographie Illico collé sur affichage libre</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_1-2.webp</image:loc>
+      <image:caption>Affichage libre avec poème urbain en lettres scotchées</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_2-1.webp</image:loc>
+      <image:caption>Poème collé sur panneau électoral en papier fluo</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_2-2.webp</image:loc>
+      <image:caption>Détail d'un poème sur panneau d'affichage libre, typographie artisanale</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_3-1.webp</image:loc>
+      <image:caption>Poème sur palissade de chantier en typographie Illico</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_3-2.webp</image:loc>
+      <image:caption>Détail de poème sur palissade de chantier</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_4-1.webp</image:loc>
+      <image:caption>Poème affiché sur palissade blanche en papier fluo</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_4-2.webp</image:loc>
+      <image:caption>Détail d'affichage poétique sur palissade</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_5-1.webp</image:loc>
+      <image:caption>Poème collé sur panneau publicitaire urbain</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_5-2.webp</image:loc>
+      <image:caption>Affichage poétique sur publicité détournée</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_apres-1.webp</image:loc>
+      <image:caption>Poème collé sur panneau publicitaire urbain</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_apres-2.webp</image:loc>
+      <image:caption>Affichage poétique sur publicité détournée</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_poeme-2.webp</image:loc>
+      <image:caption>Recueil imprimé des poèmes du projet Maintenance, contrôles et dérapages</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_Reportage-1.webp</image:loc>
+      <image:caption>Reportage photo du projet Maintenance, contrôles et dérapages</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_MCD_type-0.webp</image:loc>
+      <image:caption>Alphabet complet de la typographie Illico réalisée au scotch</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mcd/corentin-echivard_prj-petit_mcd.webp</image:loc>
+      <image:caption>Livret reportage, double photo de la typographie Illico sur panneau urbain</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+  </url>
+
+  <!-- Page Milletype Foundry - 13 images -->
+  <url>
+    <loc>https://corentinechivard.com/milletype-foundry</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mf/corentin-echivard_mf_beach-club-1.webp</image:loc>
+      <image:caption>Tissu imprimé d'un motif répétitif de données météo stylisées et mises en page avec la typographie MF Beach Club disponible chez Milletype Foundry</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mf/corentin-echivard_mf_beach-club-2.webp</image:loc>
+      <image:caption>Set de deux raquettes de plage sérigraphiées de motifs circulaires et textes spiralés réalisés avec la typographie MF Beach Club disponible chez Milletype Foundry</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mf/corentin-echivard_mf_beach-club-3.webp</image:loc>
+      <image:caption>Horloge circulaire, où chaque heure et minute sont écrites en toutes lettres avec la police MF Beach Club disponible chez Milletype Foundry</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mf/corentin-echivard_mf_corinthe-1.webp</image:loc>
+      <image:caption>Casquette brodée du nom Corinthe avec la typographie MF Corinthe disponible chez Milletype Foundry</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mf/corentin-echivard_mf_corinthe-2.webp</image:loc>
+      <image:caption>Zoom sur un t-shirt plié imprimé avec un motif en police MF Corinthe disponible chez Milletype Foundry</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mf/corentin-echivard_mf_corinthe-3.webp</image:loc>
+      <image:caption>Carte postale imprimée avec des motifs typographiques en police MF Corinthe disponible chez Milletype Foundry</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mf/corentin-echivard_mf_fondation-1.webp</image:loc>
+      <image:caption>Horloge circulaire, où chaque heure et minute sont écrites avec la police MF Fondation disponible chez Milletype Foundry</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mf/corentin-echivard_mf_fondation-2.webp</image:loc>
+      <image:caption>Horloge circulaire, où chaque heure et minute sont écrites avec la police MF Fondation disponible chez Milletype Foundry</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mf/corentin-echivard_mf_fondation-3.webp</image:loc>
+      <image:caption>Carte postale imprimée avec des motifs typographiques en police MF Fondation disponible chez Milletype Foundry</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mf/corentin-echivard_mf_minazuki-1.webp</image:loc>
+      <image:caption>Carte postale imprimée avec des motifs typographiques en police MF Minazuki disponible chez Milletype Foundry</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mf/corentin-echivard_mf_minazuki-2.webp</image:loc>
+      <image:caption>Détail d'un spécimen en risographie, reliure artisanale visible, de la police MF Minazuki disponible chez Milletype Foundry</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mf/corentin-echivard_mf_minazuki-3.webp</image:loc>
+      <image:caption>Spécimen imprimé en risographie pour la typographie MF Minazuki disponible chez Milletype Foundry</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/mf/corentin-echivard_prj-petit_milletype.webp</image:loc>
+      <image:caption>Titrage de présentation Milletype Foundry, spécimen typographique MF Beach Club</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+  </url>
+
+  <!-- Page Predibat - 6 images -->
+  <url>
+    <loc>https://corentinechivard.com/predibat</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/predibat/corentin-echivard_Predibat_branding.webp</image:loc>
+      <image:caption>Présentation du branding Predibat, palette graphique et logotype développé par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/predibat/corentin-echivard_Predibat_insta.webp</image:loc>
+      <image:caption>Aperçu du compte Instagram Predibat avec identité visuelle harmonisée réalisé par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/predibat/corentin-echivard_predibat_visitcard-zoom.webp</image:loc>
+      <image:caption>Zoom sur carte de visite Predibat, design minimal et logo typographique réalisé par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/predibat/corentin-echivard_Predibat_visitcard.webp</image:loc>
+      <image:caption>Carte de visite Predibat avec typographie et logo en recto-verso réalisée par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/predibat/corentin-echivard_Predibat_Website.webp</image:loc>
+      <image:caption>Capture d'écran du site web Predibat avec design épuré et éléments graphiques modulaires conçu par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/predibat/corentin-echivard_prj-petit_predibat.webp</image:loc>
+      <image:caption>Zoom sur carte de visite Predibat, design minimal et logo typographique réalisé par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+  </url>
+
+  <!-- Page Récolte Citadine - 11 images -->
+  <url>
+    <loc>https://corentinechivard.com/recolte-citadine</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/recolte/corentin-echivard_recolte-citadine_10.webp</image:loc>
+      <image:caption>Affiche événementielle La Récolte Citadine sur panneau public</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/recolte/corentin-echivard_recolte-citadine_1.webp</image:loc>
+      <image:caption>Visuel typographique Y venir de La Récolte Citadine</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/recolte/corentin-echivard_recolte-citadine_2.webp</image:loc>
+      <image:caption>Visuel typographique Dans un but de La Récolte Citadine</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/recolte/corentin-echivard_recolte-citadine_3.webp</image:loc>
+      <image:caption>Visuel typographique Flâner de La Récolte Citadine</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/recolte/corentin-echivard_recolte-citadine_4.webp</image:loc>
+      <image:caption>Visuel typographique Et y découvrir de La Récolte Citadine</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/recolte/corentin-echivard_recolte-citadine_5.webp</image:loc>
+      <image:caption>Visuel typographique D'autres possibilités de La Récolte Citadine</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/recolte/corentin-echivard_recolte-citadine_6.webp</image:loc>
+      <image:caption>Pictogrammes pour La Récolte Citadine en version négative noir et blanc</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/recolte/corentin-echivard_recolte-citadine_7.webp</image:loc>
+      <image:caption>Pochoir pour palette en bois peinte pour la signalétique de La Récolte Citadine</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/recolte/corentin-echivard_recolte-citadine_8.webp</image:loc>
+      <image:caption>Palette en bois peinte pour la signalétique de La Récolte Citadine</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/recolte/corentin-echivard_prj-petit_recolte-citadine.webp</image:loc>
+      <image:caption>Affiche événementielle La Récolte Citadine sur panneau public</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/recolte/corentin-echivard_recolte-citadine_0.webp</image:loc>
+      <image:caption>Logo La Récolte Citadine en version négative noir et blanc</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+  </url>
+
+  <!-- Page Screenprint - 9 images -->
+  <url>
+    <loc>https://corentinechivard.com/screenprint</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/screenprint/corentin-echivard_prj-petit_screenprint.webp</image:loc>
+      <image:caption>T-shirt Milletype imprimé en sérigraphie avec motif graphique expérimental</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/screenprint/corentin-echivard_screenprint_poster1.webp</image:loc>
+      <image:caption>Affiche sérigraphiée avec motif en papier découpé, composition graphique artisanale</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/screenprint/corentin-echivard_screenprint_poster2.webp</image:loc>
+      <image:caption>Affiche sérigraphiée avec motif géométrique minimaliste en noir et blanc</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/screenprint/corentin-echivard_screenprint_poster3.webp</image:loc>
+      <image:caption>Ensemble d'affiches sérigraphiées avec motif en papier découpé, composition graphique artisanale</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/screenprint/corentin-echivard_screenprint_totebag1.webp</image:loc>
+      <image:caption>Tote bag sérigraphié avec motif en papier découpé, impression artisanale</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/screenprint/corentin-echivard_screenprint_totebag2.webp</image:loc>
+      <image:caption>Tote bag sérigraphié avec motif géométrique abstrait</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/screenprint/corentin-echivard_screenprint_totebag3.webp</image:loc>
+      <image:caption>Tote bag sérigraphié motif géométrique en gros plan</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/screenprint/corentin-echivard_screenprint_tshirt1.webp</image:loc>
+      <image:caption>T-shirt sérigraphié avec motif en papier découpé, impression sur coton blanc</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/screenprint/corentin-echivard_screenprint_tshirt2.webp</image:loc>
+      <image:caption>T-shirt sérigraphié avec motif géométrique minimaliste sur textile clair</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+  </url>
+
+  <!-- Page Smart City Tour - 6 images -->
+  <url>
+    <loc>https://corentinechivard.com/smart-city-tour</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/sct/corentin-echivard_prj-petit_sct.webp</image:loc>
+      <image:caption>Zoom sur carte de visite Smart City Tour avec design minimal et logo typographique</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/sct/corentin-echivard_SCT_phone.webp</image:loc>
+      <image:caption>Affichage de l'identité visuelle Smart City Tour sur smartphone réalisée par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/sct/corentin-echivard_SCT_stickers.webp</image:loc>
+      <image:caption>Stickers Smart City Tour avec logo et design graphique conçue par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/sct/corentin-echivard_SCT_visitcard-zoom.webp</image:loc>
+      <image:caption>Zoom sur carte de visite Smart City Tour avec design minimal et logo typographique réalisée par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/sct/corentin-echivard_SCT_visitcard.webp</image:loc>
+      <image:caption>Zoom sur carte de visite Smart City Tour avec design minimal et logo typographique réalisée par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/sct/corentin-echivard_SCT_website.webp</image:loc>
+      <image:caption>Aperçu du site web Smart City Tour avec mise en page claire et visuels immersifs réalisé par Corentin Echivard</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+  </url>
+
+  <!-- Page Images archivées collectées empruntées - 9 images -->
+  <url>
+    <loc>https://corentinechivard.com/images-archivees-collectees-empruntees</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/thesis/corentin-echivard_design-thesis_0.gif</image:loc>
+      <image:caption>Animation GIF d'éléments visuels extraits du projet Images archivées, collectées, empruntées</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/thesis/corentin-echivard_design-thesis_1.webp</image:loc>
+      <image:caption>Couverture du projet de thèse Images archivées, collectées, empruntées</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/thesis/corentin-echivard_design-thesis_2.webp</image:loc>
+      <image:caption>Page intérieure du livre de thèse avec composition graphique</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/thesis/corentin-echivard_design-thesis_3.webp</image:loc>
+      <image:caption>Photographie imprimée sur page de livre</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/thesis/corentin-echivard_design-thesis_4.webp</image:loc>
+      <image:caption>Détail sommaire du projet Images archivées, collectées, empruntées</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/thesis/corentin-echivard_design-thesis_5.webp</image:loc>
+      <image:caption>Mise en page avec image en pleine page et texte court</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/thesis/corentin-echivard_design-thesis_hacked.webp</image:loc>
+      <image:caption>Image modifiée dans le cadre de la recherche visuelle du projet</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/thesis/corentin-echivard_design-thesis_Postal-card.webp</image:loc>
+      <image:caption>Carte postale issue du projet Images archivées, collectées, empruntées</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/thesis/corentin-echivard_prj-petit_design-thesis.webp</image:loc>
+      <image:caption>Page intérieure du livre de thèse « Images archivées, collectées, empruntées »</image:caption>
+      <image:license>https://corentinechivard.com/mentions-legales</image:license>
+    </image:image>
+  </url>
+
+</urlset>
