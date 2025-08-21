@@ -8,3 +8,4 @@ Disallow: /private/
 Allow: /
 
 Sitemap: https://corentinechivard.com/sitemap.xml
+Sitemap: https://corentinechivard.com/sitemap-images.xml
