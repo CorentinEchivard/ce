@@ -291,6 +291,11 @@ header.scrolled .head {
   object-fit: cover;
 }
 
+.widthwrapfull {
+  width: 100%;
+  height: 90%;
+}
+
 .widthwrappro {
   max-height: 92vh;
   width: calc(50% - 1.2rem);
@@ -439,8 +444,8 @@ header.scrolled .head {
 
 .coverprojet {
   width: 100%;
-  height: 65vh;
-  object-fit: cover;
+  height: 85vh;;
+object-fit: cover;
   margin-top: 1.2rem;
   transition: filter 0.5s ease;
 }
