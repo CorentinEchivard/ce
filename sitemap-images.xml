@@ -107,6 +107,70 @@
     </image:image>
   </url>
 
+  <!-- Page Type Design - 10 images -->
+  <url>
+    <loc>https://corentinechivard.com/type-design</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/type/corentin-echivard_typos1.webp</image:loc>
+      <image:caption>Titrage d'une typographie ronde combinant styles sans-serif et stencil</image:caption>
+      <image:license>https://corentinechivard.com/informations#droits-auteur</image:license>
+    </image:image>
+    <loc>https://corentinechivard.com/type-design</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/type/corentin-echivard_typos2.webp</image:loc>
+      <image:caption>Titrage d'une typographie inspirée de la gravure lapidaire et des frontons de temples grecs</image:caption>
+      <image:license>https://corentinechivard.com/informations#droits-auteur</image:license>
+    </image:image>
+    <loc>https://corentinechivard.com/type-design</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/type/corentin-echivard_typos3.webp</image:loc>
+      <image:caption>Titrage d'une typographie acérée aux influences gothiques</image:caption>
+      <image:license>https://corentinechivard.com/informations#droits-auteur</image:license>
+    </image:image>
+    <loc>https://corentinechivard.com/type-design</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/type/corentin-echivard_typos4.webp</image:loc>
+      <image:caption>Titrage d'une typographie serif conçue pour le point de croix</image:caption>
+      <image:license>https://corentinechivard.com/informations#droits-auteur</image:license>
+    </image:image>
+    <loc>https://corentinechivard.com/type-design</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/type/corentin-echivard_typos5.webp</image:loc>
+      <image:caption>Titrage d'une typographie stencil ultra-condensée à axe variable jouant sur l'épaisseur des horizontales</image:caption>
+      <image:license>https://corentinechivard.com/informations#droits-auteur</image:license>
+    </image:image>
+    <loc>https://corentinechivard.com/type-design</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/type/corentin-echivard_typos6.webp</image:loc>
+      <image:caption>Titrage d'une typographie à empattements tuscan qui s'étire et se contracte</image:caption>
+      <image:license>https://corentinechivard.com/informations#droits-auteur</image:license>
+    </image:image>
+    <loc>https://corentinechivard.com/type-design</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/type/corentin-echivard_typos7.webp</image:loc>
+      <image:caption>Titrage d'une typographie à largeur variable</image:caption>
+      <image:license>https://corentinechivard.com/informations#droits-auteur</image:license>
+    </image:image>
+    <loc>https://corentinechivard.com/type-design</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/type/corentin-echivard_typos8.webp</image:loc>
+      <image:caption>Titrage d'une typographie en double contour inspirée de l'univers graphique portugais</image:caption>
+      <image:license>https://corentinechivard.com/informations#droits-auteur</image:license>
+    </image:image>
+    <loc>https://corentinechivard.com/type-design</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/type/corentin-echivard_typos9.webp</image:loc>
+      <image:caption>Titrage d'une typographie fine inspirée du point de couture</image:caption>
+      <image:license>https://corentinechivard.com/informations#droits-auteur</image:license>
+    </image:image>
+    <loc>https://corentinechivard.com/type-design</loc>
+    <image:image>
+      <image:loc>https://corentinechivard.com/links/img/type/corentin-echivard_typos10.webp</image:loc>
+      <image:caption>Titrage d'une typographie ultra-bold qui a un goût de café</image:caption>
+      <image:license>https://corentinechivard.com/informations#droits-auteur</image:license>
+    </image:image>
+  </url>
+
   <!-- Page Éphémère - 9 images -->
   <url>
     <loc>https://corentinechivard.com/ephemere</loc>

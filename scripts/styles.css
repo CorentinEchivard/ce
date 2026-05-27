@@ -513,6 +513,10 @@ video {
   object-fit: cover;
 }
 
+.dark-mode video{
+  filter: invert();
+}
+
 .loading-indicator {
   position: absolute;
   top: 50%;
